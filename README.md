@@ -14,84 +14,58 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 ### [✔] Installation & set up of express mongoose and pug.
-<br> 
+<pre>
     [+] (npm init -y) 
-<br>
     [+] Install Express (npm i express).
-<br>
     [+] Install  Mongoose (npm i mongoose).
-<br>
     [+] Install pug (npm i pug).
-<br>
     [+] Create a server.js, app.js or index.js file (code server.js or touch server.js).
-<br>
     [+] Create a public directory (mkdir public).
-<br>
     [+] Add a views directory in the public directory (mkdir public/views).
-<br>
     [+] Create a routes directory (mkdir routes).
-<br>
     [+] Create a models directory (mkdir models).
-<br>
     [+] Go back to server.js (Open in vscode if you used touch command then open in editor of choice). 
-<br>
-
+</pre>
 &nbsp;
 
 ### [✔] Import & basic setup of express, mongoose, pug and enviroment variables.
-<br>
+<pre>
     [+] Import express from node_modules (Ctrl+f -> #1 in <a href="#">server.js </a> )).
-<br>
     [+] Import mongoose from node_modules (Ctrl+f -> #2 in server.js).
-<br>
     [+] Create an instance of an express application (Ctrl+f -> #3 in server.js).
-<br>
     [+] Import the path nodejs core module (Ctrl+f -> #4 in server.js).
-<br>
     [+] Set the view engine for express to pug (Ctrl+f -> #5 in server.js).
-<br>
-
+</pre>
 &nbsp;    
 
 ### [✔] Setup routes for the server.js file (Express).
-<br>
+<pre>
     [+] Create a home route (code or touch routes/home.js).
-<br>   
     [+] Write to home.js and create an instance of an express router to be exported (Ctrl+f -> #1 in <a href="#">routes/home.js</a> ).
-<br>
     [+] Export that router to be used in any file (Ctrl+f -> #2 in home.js).
-<br>
     [+] Then import and use that router as middleware in the server.js file (Ctrl+f -> #1 in <a href="#">server.js</a> ).
-<br>
-
+</pre>
 &nbsp;
 
 ### [✔] Create a mongoose schema for graduates (Mongoose).
-<br>    
+<pre>
     [+] Create graduate.js file in the models directory  (touch or code models/graduate.js).
-<br>
     [+] Import mongoose and use mongoose.Schema() syntax to make a schema (Ctrl+f -> #1 in <a href="#">models/graduate.js</a> ).
-<br>
     [+] Export the schema with the mognoose.model() syntax. (Ctrl+f -> #2 in models/grafuate.js). 
-<br>
     [+] Import it into routes/home.js (Ctrl+f -> #3 in <a href="#">routes/home.js</a> )). 
-<br>
-
+</pre>
 &nbsp;
 
 ### [✔] Set up views for the frontend (Pug).
-<br>
+<pre>
     [+] Create a index.pug  (touch or code public/views/index.pug).
-<br>
     [+] Create a layout for the application in that file (See <a href="#">public/views/index.pug</a> ).
-<br>
-
+</pre>
 &nbsp;
 
 ### [✔] Add Stylesheet and JavaScript files in the public directory (Import it into index.pug).
-<br>
+<pre>
     [+] Add a script.js and stylesheet.css file in public directory (touch or code public/script.js & public/stylesheet.css).
-<br>
     [+] (See <a href="#">public/script.js</a> & <a href="#">public/stylesheet.css</a> )
-<br>
+</pre>
 &nbsp;
