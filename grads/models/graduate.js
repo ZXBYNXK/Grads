@@ -3,8 +3,6 @@
     // # 1 Import mongoose then create a mongoose schema.
     const mongoose = require('mongoose'),
         GraduateSchema = new mongoose.Schema({
-          
-          
             avatar: {
                 type: String,
                 default: 'https://bit.ly/2wzdL2x'

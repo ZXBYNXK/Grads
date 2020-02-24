@@ -38,7 +38,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 ### [✔] Import & basic setup of express, mongoose, pug and enviroment variables.
-    [+] Import express from node_modules (Ctrl+f -> #1 in [_server.js_]("#"))).
+    [+] Import express from node_modules (Ctrl+f -> #1 in [server.js]("#"))).
 <br>
     [+] Import mongoose from node_modules (Ctrl+f -> #2 in server.js).
 <br>
@@ -55,11 +55,11 @@ similar to a google search rather than having a social media aspect compared to 
 <br>
     [+] Create a home route (code or touch routes/home.js).
 <br>   
-    [+] Write to home.js and create an instance of an express router to be exported (Ctrl+f -> #1 in [_routes/home.js_]("#")).
+    [+] Write to home.js and create an instance of an express router to be exported (Ctrl+f -> #1 in [routes/home.js]("#")).
 <br>
     [+] Export that router to be used in any file (Ctrl+f -> #2 in home.js).
 <br>
-    [+] Then import and use that router as middleware in the server.js file (Ctrl+f -> #1 in [_server.js_]("#")).
+    [+] Then import and use that router as middleware in the server.js file (Ctrl+f -> #1 in [server.js]("#")).
 <br>
 
 &nbsp;
@@ -68,11 +68,11 @@ similar to a google search rather than having a social media aspect compared to 
 <br>    
     [+] Create graduate.js file in the models directory  (touch or code models/graduate.js).
 <br>
-    [+] Import mongoose and use mongoose.Schema() syntax to make a schema (Ctrl+f -> #1 in [_models/graduate.js_]("#")).
+    [+] Import mongoose and use mongoose.Schema() syntax to make a schema (Ctrl+f -> #1 in [models/graduate.js]("#")).
 <br>
     [+] Export the schema with the mognoose.model() syntax. (Ctrl+f -> #2 in models/grafuate.js). 
 <br>
-    [+] Import it into routes/home.js (Ctrl+f -> #3 [_routes/home.js_]("#"))). 
+    [+] Import it into routes/home.js (Ctrl+f -> #3 [routes/home.js]("#"))). 
 <br>
 
 &nbsp;
@@ -81,7 +81,7 @@ similar to a google search rather than having a social media aspect compared to 
 <br>
     [+] Create a index.pug  (touch or code public/views/index.pug).
 <br>
-    [+] Create a layout for the application in that file (See [_public/views/index.pug_]("#")).
+    [+] Create a layout for the application in that file (See [public/views/index.pug]("#")).
 <br>
 
 &nbsp;
@@ -90,6 +90,6 @@ similar to a google search rather than having a social media aspect compared to 
 <br>
     [+] Add a script.js and stylesheet.css file in public directory (touch or code public/script.js & public/stylesheet.css).
 <br>
-    [+] (See [_public/script.js_]("#") & [_public/stylesheet.css_]("#"))
+    [+] (See [public/script.js]("#") & [public/stylesheet.css]("#"))
 <br>
 &nbsp;
