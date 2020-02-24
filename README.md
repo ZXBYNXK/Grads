@@ -13,7 +13,8 @@ similar to a google search rather than having a social media aspect compared to 
 
 &nbsp;
 
-### [✔] Installation & set up of express mongoose and pug. 
+### [✔] Installation & set up of express mongoose and pug.
+<br> 
     [+] (npm init -y) 
 <br>
     [+] Install Express (npm i express).
