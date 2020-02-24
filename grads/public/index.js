@@ -80,8 +80,11 @@ function zFetch(method, url, json) {
 
         Xhr.onload = () => {
           alert(4, Xhr.response);
-        };
-
+          setTimeout(()=> {
+            location.reload()
+          }, 1000)
+          };
+ 
         break;
 
       default:
@@ -109,6 +112,7 @@ function sendForm(ev) {
     data[vals[0]] = vals[1];
   };
   zFetch("POST", "/api/home", data);
+  
 }
 
 function createForm(ev) {
