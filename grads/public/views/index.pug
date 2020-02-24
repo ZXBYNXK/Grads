@@ -1,0 +1,45 @@
+doctype html
+html     
+    head 
+        title Graduates
+        link(rel="stylesheet" type="text/css" href="../styles.css")
+     
+    body
+        header(class="container_row_1" id="header") 
+            h1(id="heading_text") 🎓 #{data.title}
+            block content
+        div(class="container_row_1")
+            button(class="header_buttons" id="sign_up") Sign Up
+            button(class="header_buttons" id="search_graduates") Search
+        div(id="headline")
+            pre(style="padding:50px"). 
+                Welecome to the Graduate Project
+                Sign up to get started!
+        h1(align="center") Current Graduates
+        form(id="form_box1" name="grad_form")
+            label(for="firstname") Firstname
+            input(name="firstname" type="text" placeholder="John")
+            label(for="lastname") Lastname
+            input(name="lastname" type="text" placeholder="Doe")            
+            label(for="email") Email
+            input(name="email" placeholder="name@email.com")            
+            label(for="jobtitle") JobTitle
+            input(name="jobtitle" id="job_title" placeholder="Optional" type="text")    
+            span(id="password1_div")
+                label(for="password1") Password
+                br
+                input(name="password1" type="password")
+            span(id="password2_div") 
+                label(for="password2") Password again
+                br
+                input(name="password2" type="password")
+
+            button(type="submit" class="header_buttons" id="signup_submit") Sign up
+            
+        div(class="container_row_1" id="show_graduates") 
+    
+        script(src="../index.js")
+           
+    footer(style="padding: 100px; font-size: 40px;")  
+        span &copy; 🎓 Graduates
+    block foot

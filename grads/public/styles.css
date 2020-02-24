@@ -1,0 +1,115 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: white-smoke;
+}
+
+#header {
+  background-color: black !important;
+  color: white;
+  opacity: 0.8;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  border-bottom-color: orange;
+  margin: 0;
+}
+footer {
+  text-align: center;
+}
+.container_row_1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.hover_me {
+  padding: 20px;
+  width: 10%;
+  text-align: center;
+  border-style: solid;
+  box-shadow: 3px 3px 10px black;
+  border-color: orange;
+  background-color: black;
+  opacity: 0.8;
+  margin: 12px;
+  border-radius: 12px;
+  color: white;
+}
+.hover_me:hover {
+  box-shadow: none;
+
+  border-width: 3px;
+  border-color: black;
+  opacity: none;
+}
+.header_buttons {
+  box-shadow: 3px 3px 10px black;
+  margin: 10px;
+  background-color:black;
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: orange;
+}
+.header_buttons:hover {
+  border-color: black;
+  box-shadow: none;
+}
+#heading_text {
+  font-size: 50px;
+  width: 100%;
+}
+#headline {
+  padding: 20px;
+  border-style: solid;
+  box-shadow: 3px 3px 10px black;
+  border-color: orange;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: 33px;
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+}
+#form_box1 {
+  padding: 20px;
+  border-style: solid;
+  box-shadow: 3px 3px 10px black;
+  border-color: orange;
+  text-align: center;
+  border-radius: 12px;
+  display: none;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 40px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+#password1_div {
+  display: none;
+}
+#password2_div {
+  display: none;
+}
+input {
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#show_graduates {
+  margin: 100px;
+}
