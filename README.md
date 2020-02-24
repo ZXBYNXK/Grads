@@ -72,7 +72,7 @@ similar to a google search rather than having a social media aspect compared to 
 <br>
     [+] Export the schema with the mognoose.model() syntax. (Ctrl+f -> #2 in models/grafuate.js). 
 <br>
-    [+] Import it into routes/home.js (Ctrl+f -> #3 [routes/home.js](#) )). 
+    [+] Import it into routes/home.js (Ctrl+f -> #3 <a href="#">routes/home.js</a> )). 
 <br>
 
 &nbsp;
@@ -81,7 +81,7 @@ similar to a google search rather than having a social media aspect compared to 
 <br>
     [+] Create a index.pug  (touch or code public/views/index.pug).
 <br>
-    [+] Create a layout for the application in that file (See [public/views/index.pug](#) ).
+    [+] Import it into routes/home.js (Ctrl+f -> #3 <a href="#">routes/home.js</a> )). 
 <br>
 
 &nbsp;
