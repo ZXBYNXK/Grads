@@ -13,8 +13,7 @@ similar to a google search rather than having a social media aspect compared to 
 
 &nbsp;
 
-### [✔] Installation & set up of express mongoose and pug.
-<br>
+### [✔] Installation & set up of express mongoose and pug. 
     [+] (npm init -y) 
 <br>
     [+] Install Express (npm i express).
@@ -39,7 +38,6 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 ### [✔] Import & basic setup of express, mongoose, pug and enviroment variables.
-<br>    
     [+] Import express from node_modules (Ctrl+f -> #1 in [server.js](#) )).
 <br>
     [+] Import mongoose from node_modules (Ctrl+f -> #2 in server.js).
@@ -83,7 +81,7 @@ similar to a google search rather than having a social media aspect compared to 
 <br>
     [+] Create a index.pug  (touch or code public/views/index.pug).
 <br>
-    [+] Import it into routes/home.js (Ctrl+f -> #3 <a href="#">routes/home.js</a> )). 
+    [+] Create a layout for the application in that file (See [public/views/index.pug](#) ).
 <br>
 
 &nbsp;
@@ -92,6 +90,6 @@ similar to a google search rather than having a social media aspect compared to 
 <br>
     [+] Add a script.js and stylesheet.css file in public directory (touch or code public/script.js & public/stylesheet.css).
 <br>
-    [+] See [public/script.js](#)  & [public/stylesheet.css](#) 
+    [+] (See [public/script.js](#)  & [public/stylesheet.css](#) )
 <br>
 &nbsp;
