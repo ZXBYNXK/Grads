@@ -39,7 +39,7 @@ similar to a google search rather than having a social media aspect compared to 
 
 ### [✔] Import & basic setup of express, mongoose, pug and enviroment variables.
 <pre>
-    [+] Import express from node_modules (Ctrl+f -> #1 in <a href="#">server.js </a> )).
+    [+] Import express from node_modules (Ctrl+f -> #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js </a> )).
     
     [+] Import mongoose from node_modules (Ctrl+f -> #2 in server.js).
     
@@ -60,7 +60,7 @@ similar to a google search rather than having a social media aspect compared to 
     
     [+] Export that router to be used in any file (Ctrl+f -> #2 in home.js).
     
-    [+] Then import and use that router as middleware in the server.js file (Ctrl+f -> #1 in <a href="#">server.js</a> ).
+    [+] Then import and use that router as middleware in the server.js file (Ctrl+f -> #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js</a> ).
 </pre>
 &nbsp;
 
