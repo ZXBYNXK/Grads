@@ -38,7 +38,8 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 ### [✔] Import & basic setup of express, mongoose, pug and enviroment variables.
-    [+] Import express from node_modules (Ctrl+f -> #1 in <a href="#">server.js</a> )).
+<br>
+    [+] Import express from node_modules (Ctrl+f -> #1 in <a href="#">server.js </a> )).
 <br>
     [+] Import mongoose from node_modules (Ctrl+f -> #2 in server.js).
 <br>
