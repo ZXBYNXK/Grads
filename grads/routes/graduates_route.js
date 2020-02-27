@@ -1,16 +1,31 @@
 // Graduates Router 
 
 const express = require('express'),
-    router = express.Router();
+    router = express.Router(),
+    Graduate = require('../models/graduate');
 
-
-    router.get('/', (req, res) => {
+    router.get('/:id', async (req, res) => {    
+        try{
+        const graduate = await Graduate.findById(req.params.id);
         res.status(200).render('graduate',
         {
-            data: {
-                title: 'Grads'
+            graduate: {
+                name: `${graduate.firstname} ${graduate.lastname}`,
+                avatar: graduate.avatar,
+                about: graduate.about,
+                education: graduate.eduaction,
+                email: graduate.email,
+                jobtitle: graduate.jobtitle
             } 
         })
+        } 
+        catch(err) {
+            res.status(404).render('errors', {
+                error: {
+                    messge: "Error 404 Not found." 
+                }
+            })
+        }
     })
 
     

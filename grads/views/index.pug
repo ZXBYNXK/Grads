@@ -1,0 +1,56 @@
+doctype html
+html     
+    head 
+        title Graduates
+        link(rel="stylesheet", type="text/css", href="../styles.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")     
+    body
+        header(class="container_row_1" id="header") 
+            span(id="heading_text") 🎓 Grads
+        div(class="container_row_1")
+            button(class="header_buttons" id="signup_button") Sign Up
+            button(class="header_buttons" id="search_button") Search
+            button(class="header_buttons" id="headline_button") Headline
+        br
+        div(id="headline")
+            pre(style="padding:20px"). 
+                Welecome to the Graduate Project
+                Sign up to get started!
+        br             
+        form(id="form_box1" name="grad_form")
+            h1(style="maegin-left: 1px;") 🎓 New Graduate ?
+            label(for="firstname") Firstname
+            input(name="firstname" type="text" placeholder="John")
+            label(for="lastname") Lastname
+            input(name="lastname" type="text" placeholder="Doe")            
+            label(for="email") Email
+            input(name="email" placeholder="name@email.com")            
+            label(for="jobtitle") JobTitle
+            input(name="jobtitle" id="job_title" placeholder="Optional" type="text")    
+            span(id="extend_div")
+                label(for="imageurl") Image url 
+                br
+                input(name="avatar" type="text")
+            
+            span(id="extend2_div")
+                label(for="about") About 
+                br
+                textarea(name="about" placeholder="optional")                
+            
+            span(id="extend3_div") 
+                label(for="education") Education
+                br
+                Textarea(name="education" type="textarea")
+
+            button(type="submit" class="header_buttons" id="signup_submit") Sign up
+        h1(align="center") Current Graduates 
+        div(id="search_div")
+            input(type="text" id="search_input" placeholder="Search Graduates")                      
+        div(class="container_row_1" id="show_graduates") 
+    
+        script(src="../index.js")
+            
+    footer(id="footer1") 
+        span(style="font-size: 30px;") 🎓Grads 
+        br
+        span(style="font-size: 10px") &copy; 2020 By Darius Rain 

@@ -1,0 +1,54 @@
+doctype html
+html     
+    head 
+        title Graduates
+        link(rel="stylesheet" type="text/css" href="../../styles.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    body
+        header(class="container_row_1" id="header") 
+            span(id="heading_text") 🎓 #{graduate.name}
+        div(class="container_row_1")
+            button( id="home_button" class="header_buttons" ) Home
+        div(id="graduate_profile" class="container_column_1")
+            div
+                img(src=graduate.avatar, style="border-radius: 12px; width:100px;")
+                br
+                br
+
+            div(id="jobtitle_div", class="profile_div")
+                h1 Job Title:
+                span #{graduate.jobtitle}
+                br
+                br
+                br                
+        
+            div(id="education_div", class="profile_div")
+                h1 Education:
+                span #{graduate.education}
+                br
+                br
+                br
+
+            div(id ="about_div" class="profile_div") 
+                h1 About:
+                span #{graduate.about}
+                br
+                br
+                br
+                
+            div(id="contact" class="profile_div")
+                h1 Contact:
+                span #{graduate.email}
+        script. 
+            document.getElementById("home_button").addEventListener("click", goHome)
+            function goHome() {
+              window.location.assign("http://localhost:3000/api/home")
+            }
+
+
+    footer(id="footer2")  
+        span(style="font-size: 30px;") 🎓Grads 
+        br
+        span(style="font-size:10px") &copy; 2020 By Darius Rain   
+        
+            
