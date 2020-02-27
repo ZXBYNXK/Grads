@@ -61,12 +61,8 @@ similar to a google search rather than having a social media aspect compared to 
 
  ## [✔] Import & basic setup of express, mongoose, pug and enviroment variables in server.js file.
 <pre>
-<<<<<<< HEAD
-    [+] Import express from node_modules (Ctrl+f -> #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js </a> )).
-=======
     [+] Import express from node_modules 
         // See #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js </a>
->>>>>>> v1.0.1
     
     [+] Import mongoose from node_modules 
         // See #2 in server.js
