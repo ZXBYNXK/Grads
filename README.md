@@ -1,9 +1,10 @@
-# The Graduate Project.
+
+ # The Graduate Project.
 <br>
 
-## 🎓Grads - By Darius Rain.
+# 🎓Grads
 
-## About project:
+ ## About project:
 Create a full stack application using Express Mongoose Pug and Nodejs. <br>
 This application will be used to display a users job history & education information to companies <br>
 who may be searching to fill a certain job title. (Sounds a little like Linkedin 🤣) <br>
@@ -13,82 +14,162 @@ similar to a google search rather than having a social media aspect compared to 
 
 &nbsp;
 
-### [✔] Installation & set up of express mongoose and pug.
+
+ ## [✔] Installation & set up of express mongoose and pug.
 <pre>
-    [+] (npm init -y) 
+    [+] Initialize a package.json file 
+        // Command
+        // npm init -y 
     
-    [+] Install Express (npm i express).
+    [+] Install Express 
+        // Command 
+        // npm i express
     
-    [+] Install  Mongoose (npm i mongoose).
+    [+] Install  Mongoose 
+        // Command
+        // npm i mongoose
     
-    [+] Install pug (npm i pug).
+    [+] Install pug
+        // Command 
+        // npm i pug
     
-    [+] Create a server.js, app.js or index.js file (code server.js or touch server.js).
+    [+] Create a server.js, app.js or index.js file (Main server file)
+        // Commands
+        // Visual Studio Code: code server.js 
+        // touch server.js -> Then open in editor
     
-    [+] Create a public directory (mkdir public).
+    [+] Create a public directory (Static files) 
+        //Command
+        // mkdir public
     
-    [+] Add a views directory in the public directory (mkdir public/views).
-    
-    [+] Create a routes directory (mkdir routes).
+    [+] Create a views directory (for pug files) 
+        // Command 
+        // mkdir views
+
+    [+] Create a routes directory 
+        // Command
+        // mkdir routes
     
     [+] Create a models directory (mkdir models).
-    
-    [+] Go back to server.js (Open in vscode if you used touch command then open in editor of choice). 
+        // Commmand
+        // mkdir models
+
+    [+] Open server.js 
 </pre>
 &nbsp;
 
-### [✔] Import & basic setup of express, mongoose, pug and enviroment variables.
+
+ ## [✔] Import & basic setup of express, mongoose, pug and enviroment variables in server.js file.
 <pre>
-    [+] Import express from node_modules (Ctrl+f -> #1 in <a href="#">server.js </a> )).
+    [+] Import express from node_modules 
+        // See #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js </a>
     
-    [+] Import mongoose from node_modules (Ctrl+f -> #2 in server.js).
+    [+] Import mongoose from node_modules 
+        // See #2 in server.js
     
-    [+] Create an instance of an express application (Ctrl+f -> #3 in server.js).
+    [+] Create an instance of an express application 
+        // See #3 in server.js
+
+    [+] Import the path core module 
+        // See #4 in server.js
     
-    [+] Import the path nodejs core module (Ctrl+f -> #4 in server.js).
+    [+] Set the view engine for express to pug 
+        // See #5 in server.js
+
+    [+] Set the express view-engine to pug
+        // See #6 in server.js
     
-    [+] Set the view engine for express to pug (Ctrl+f -> #5 in server.js).
+    [+] Use the express.static() for the public directory.
+        // See #7 in server.js
+
+    [+] Create a bash script outside of the project that will 
+    be a tool to set enviroment variables in any project you may work on. 
+        // Commands 
+        // nano ../bash/set_enviroment_development.sh
+        <code>
+            #!/bin/bash
+            export DB=yourDatabaseConnectionStringHere
+            export PORT=setPort
+            export NODE_ENV=development
+            echo 'Set the enviroment to development'
+        </code>
+        // Ctrl + s (Save) 
+        // Ctrl + x (Exit)
+        // . ../bash/set_enviroment_development.sh (The '.' states the current directory you are in & the path to the bash script you want to execute)
+        // Should see message from the script that it is set to a specific enviroment.
+
+    [+] Now assign the enviroment variables value using 'process.env'
+        // See #8 in server.js
+
 </pre>
 &nbsp;    
 
-### [✔] Setup routes for the server.js file (Express).
+
+ ## [✔] Setup routes and middlewares required for the server.js file (Express).
 <pre>
-    [+] Create a home route (code or touch routes/home.js).
+    [+] Create a home route 
+        // Commands
+        // Visual Studio Code: code routes/home_route.js
+        // touch routes/home_route.j
     
-    [+] Write to home.js and create an instance of an express router to be exported (Ctrl+f -> #1 in 
-    <a href="#">routes/home.js</a> ).
+    [+] Write to 'home_route.js' and create an instance of an express router to be exported 
+        // See #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js">routes/home_route.js</a>
     
-    [+] Export that router to be used in any file (Ctrl+f -> #2 in home.js).
-    
-    [+] Then import and use that router as middleware in the server.js file (Ctrl+f -> #1 in <a href="#">server.js</a> ).
+    [+] Export that router, then now available for import in any nodejs file. 
+        // See #2 in home_route.js
+
+    [+] Then import and use that router as middleware in the server.js file 
+        // See #9 & #10 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js</a>
+
+    [+] Use built-in express middleware called express.json() so incoming requests can be parsed for interpretation.
+        // See #11 in server.js 
 </pre>
 &nbsp;
 
-### [✔] Create a mongoose schema for graduates (Mongoose).
+
+ ## [✔] Create a mongoose schema for graduates (Mongoose).
 <pre>
-    [+] Create graduate.js file in the models directory  (touch or code models/graduate.js).
+    [+] Create graduate.js file in the models directory
+        // Commands  
+        // Visusal Studio Code: code models/graduate.js
+        // touch models/graduate.js (Then open it)
     
-    [+] Import mongoose and use mongoose.Schema() syntax to make a schema (Ctrl+f -> #1 in <a href="#">models/graduate.js</a> ).
+    [+] Import mongoose and use mongoose.Schema() syntax to make a schema 
+        // See #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js">models/graduate.js</a>
     
-    [+] Export the schema with the mognoose.model() syntax. (Ctrl+f -> #2 in models/grafuate.js). 
+    [+] Export the schema with the mognoose.model() syntax 
+        // See #2 in models/graduate.js
     
-    [+] Import it into routes/home.js (Ctrl+f -> #3 in <a href="#">routes/home.js</a> )). 
+    [+] Import the model in routes/home.js 
+        // See #3 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js">routes/home_route.js</a> 
 </pre>
 &nbsp;
 
-### [✔] Set up views for the frontend (Pug).
+
+ ## [✔] Set up views for the frontend (Pug).
 <pre>
-    [+] Create a index.pug  (touch or code public/views/index.pug).
+    [+] Create a index.pug file 
+        //Commands
+        // touch or code views/index.pug).
     
-    [+] Create a layout for the application in that file (See <a href="#">public/views/index.pug</a> ).
+    [+] Create a graduate.pug file
+        // Commands 
+        // touch or code views/graduate.pug
+    
+    [+] Create a errors.pug file
+        //Commads
+        // touch or code views/errors.pug
+
+    [+] See <a href="https://github.com/DariusRain/Grads/blob/master/grads/views">views/</a>
 </pre>
 &nbsp;
 
-### [✔] Add Stylesheet and JavaScript files in the public directory (Import it into index.pug).
+
+
+ ## [✔] Add Stylesheet and JavaScript files in the public directory (Import it into index.pug).
 <pre>
-    [+] Add a script.js and stylesheet.css file in public directory (touch or code public/script.js 
-    & public/stylesheet.css).
+    [+] Add a script.js and stylesheet.css file in public directory (touch or code public/script.js & public/stylesheet.css).
     
-    [+] (See <a href="#">public/script.js</a> & <a href="#">public/stylesheet.css</a> )
+    [+] See <a href="https://github.com/DariusRain/Grads/blob/master/grads/public/index.js">public/script.js</a> & <a href="https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css">public/stylesheet.css</a> )
 </pre>
 &nbsp;

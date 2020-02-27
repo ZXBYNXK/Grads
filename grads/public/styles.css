@@ -1,20 +1,55 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
   margin: 0;
-  background-color: white-smoke;
+
 }
 
 #header {
   background-color: black !important;
   color: white;
   opacity: 0.8;
-  width: 100%;
   border-style: solid;
   border-color: black;
   border-bottom-color: orange;
-  margin: 0;
+  height:100%;
+}
+
+
+#graduate_profile img {
+
+  width: 80px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+}
+
+#graduate_profile {
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  border-style: solid;
+  box-shadow: 3px 3px 10px black;
+  border-color: orange;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 12px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom:  20px;
+}
+#home {
+  box-shadow: 3px 3px 10px black;
+  margin: 10px;
+  background-color:black;
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: orange;
 }
 footer {
   text-align: center;
@@ -25,8 +60,15 @@ footer {
   flex-wrap: wrap;
   
 }
+
+.container_column_1 {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .hover_me {
-  padding: 20px;
+  padding: 10px;
   width: 10%;
   text-align: center;
   border-style: solid;
@@ -34,13 +76,12 @@ footer {
   border-color: orange;
   background-color: black;
   opacity: 0.8;
-  margin: 12px;
   border-radius: 12px;
   color: white;
+  
 }
 .hover_me:hover {
   box-shadow: none;
-
   border-width: 3px;
   border-color: black;
   opacity: none;
@@ -61,11 +102,23 @@ footer {
   border-color: black;
   box-shadow: none;
 }
+#show_graduates {
+  width: 99%;
+}
 #heading_text {
   font-size: 50px;
-  width: 100%;
+  padding: none;
+
 }
+
+.heading_text {
+  font-size: 50px;
+  padding: none;
+
+}
+
 #headline {
+  border-radius: 12px;
   padding: 20px;
   border-style: solid;
   box-shadow: 3px 3px 10px black;
@@ -73,11 +126,38 @@ footer {
   background-color: black;
   opacity: 0.8;
   color: white;
-  font-size: 33px;
+  font-size: 25px;
   width: 88%;
   margin: 0 auto;
   text-align: center;
+  display: none;
 }
+
+
+#search_input {
+  margin-bottom: 12px;
+}
+
+
+#search_div {
+  padding: 20px;
+  border-style: solid;
+  box-shadow: 3px 3px 10px black;
+  border-color: orange;
+  text-align: center;
+  border-radius: 12px;
+  display: none;
+  width: 88%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+}
+
+
 #form_box1 {
   padding: 20px;
   border-style: solid;
@@ -89,17 +169,20 @@ footer {
   width: 50%;
   height: 100%;
   margin: 0 auto;
-  font-size: 40px;
+  font-size: 20px;
   margin-bottom: 50px;
   flex-direction: column;
   background-color: black;
   opacity: 0.8;
   color: white;
 }
-#password1_div {
+#extend_div {
   display: none;
 }
-#password2_div {
+#extend2_div {
+  display: none;
+}
+#extend3_div {
   display: none;
 }
 input {
@@ -109,7 +192,50 @@ input {
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
+  border-radius: 12px;
 }
-#show_graduates {
-  margin: 100px;
+textarea {
+  border-radius: 12px;
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
 }
+
+
+#footer1 {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  border-top-color: orange;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  margin-bottom: -1px;
+  padding: 60px;
+}
+
+.profile_div {
+  border-radius: 12px;
+  background-color: whitesmoke;
+  color: black;
+  margin: 12px;
+}
+#footer2 {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  border-top-color: orange;
+  margin-top: 10%;
+  padding: 60px;
+}
+
+/* * { border: 1px solid red; } */
