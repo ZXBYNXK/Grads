@@ -63,7 +63,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 
- ## [✔] Import & basic setup of Express, Mongoose, Pug and Enviroment variables.
+ ## [✔] Basic Nodejs setup for Express, Mongoose, Pug. 
 <pre>
 
     [+] Import express from node_modules 
@@ -87,7 +87,7 @@ similar to a google search rather than having a social media aspect compared to 
     [+] Use the express.static() for the public directory.
         // See #7 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js </a>
 
-    [+] Create a bash script outside of the project that will 
+    [+] Create a bash script outside of the project that will (Enviroment Variables) 
     be a tool to set enviroment variables in any project you may work on. 
         // Commands 
         // nano ../bash/set_enviroment_development.sh
