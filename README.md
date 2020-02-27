@@ -63,7 +63,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 
- ## [✔] Import & basic setup of express, mongoose, pug and enviroment variables in server.js file.
+ ## [✔] Import & basic setup of Express, Mongoose, Pug and Enviroment variables.
 <pre>
 
     [+] Import express from node_modules 
@@ -133,7 +133,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 
- ## [✔] Create a mongoose schema for graduates (Mongoose).
+ ## [✔] Create a Mongoose schema for graduates (Mongoose).
 <pre>
     [+] Create graduate.js file in the models directory
         // Commands  
@@ -172,7 +172,7 @@ similar to a google search rather than having a social media aspect compared to 
 
 
 
- ## [✔] Add Stylesheet and JavaScript files in the public directory (Import it into index.pug).
+ ## [✔] Add Stylesheet and JavaScript files in the public directory & link it to Pug.
 <pre>
     [+] Add a script.js and stylesheet.css file in public directory (touch or code public/script.js 
     & public/stylesheet.css).
