@@ -1,5 +1,4 @@
-
-// Graduates Router 
+// Home Router 
 
 // #1 Create an instance of an express router
 // Think of this sort of as a sub router.
@@ -16,12 +15,19 @@ const express = require('express'),
 // Documents can also contain sub documents as well.
 const Graduate = require('../models/graduate');
     
-// # 
+// #4 Created a GET route for 'http://localhost:port/api/home' (Root)
+// This route handler renders the 'index.pug' file in the views directory,
+// when the client accesses the page 'http:localhost:port/api/home' 
+// it should show the index.pug page rendered to the DOM.
     router.get('/', (req, res) => {
             res.status(200).render('index')    
     })
 
-// #
+// #6 Create a GET route 'http:/localhost:port/api/home/all' 
+// so the client can get all graduates back in an array when 
+// this resource is accessed.
+// This is useful when you want to display and interact with data 
+// on the frontend. 
     router.get('/all', async (req, res) =>{
         try {
             const allGraduates = await Graduate.find()
@@ -35,13 +41,17 @@ const Graduate = require('../models/graduate');
         }
     })
 
-// #    
+// #5 Create a post route for new graduates.    
+// In this route the client will send a HTTP POST request
+// to this endpoint and a new graduate should be saved 
+// to the database. If not then the catch block should 
+// execute its response. 
     router.post('/', async (req, res) => {
         console.log(req.body)
         const newUser = new Graduate(req.body)
         try {
             console.log('Attempting post request.')
-            const savedUser = newUser.save();
+            const savedUser = await newUser.save();
             res.status(201).json({
                 message: `Thank you ${req.body.firstname}!`
             })
