@@ -21,7 +21,7 @@ Sections: <br>
 [Process of building the front end](- [x] 📝 The process of building the frontend.)
 &nbsp;
 
-## - [x] 📝 Installation & set up of express mongoose and pug.
+* [x] 📝 Installation & set up of express mongoose and pug.
 
 
     - [x] Initialize a package.json file
