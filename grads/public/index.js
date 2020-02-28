@@ -1,5 +1,6 @@
 // Script for index.pug.
 
+// #1 
 let signupButton = document.getElementById("signup_button"),
   searchButton = document.getElementById("search_button"),
   headlineButton = document.getElementById("headline_button"),

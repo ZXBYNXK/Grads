@@ -3,58 +3,54 @@
 }
 body {
   margin: 0;
-
-}
-
-#header {
-  background-color: black !important;
-  color: white;
-  opacity: 0.8;
-  border-style: solid;
-  border-color: black;
-  border-bottom-color: orange;
-  height:100%;
-  position: relative;
 }
 
 
-#graduate_profile img {
-
-  width: 80px;
-  background-color: whitesmoke;
-  border-radius: 12px;
-}
-
-#graduate_profile {
-  padding: 20px;
+input {
   width: 50%;
-  text-align: center;
-  border-style: solid;
-  box-shadow: 3px 3px 10px black;
-  border-color: orange;
-  background-color: black;
-  opacity: 0.8;
-  border-radius: 12px;
-  color: white;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom:  20px;
-}
-#home {
-  box-shadow: 3px 3px 10px black;
-  margin: 10px;
-  background-color:black;
-  color: white;
-  border-radius: 12px;
+  padding: 10px;
   font-size: 20px;
-  opacity: 0.8;
-  margin-top: 10px;
-  border-style: solid;
-  border-color: orange;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 12px;
 }
+textarea {
+  border-radius: 12px;
+  width: 50%;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 footer {
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+.profile_div {
+  border-radius: 12px;
+  background-color: whitesmoke;
+  color: black;
+  margin: 12px;
+}
+
+.heading_text {
+  font-size: 50px;
+  padding: none;
+
+}
+
 .container_row_1 {
   display: flex;
   flex-direction: row;
@@ -103,6 +99,62 @@ footer {
   border-color: black;
   box-shadow: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+#header {
+  background-color: black !important;
+  color: white;
+  opacity: 0.8;
+  border-style: solid;
+  border-color: black;
+  border-bottom-color: orange;
+  
+}
+
+#graduate_profile img {
+
+  width: 80px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+}
+
+#graduate_profile {
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  border-style: solid;
+  box-shadow: 3px 3px 10px black;
+  border-color: orange;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 12px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom:  20px;
+}
+#home {
+  box-shadow: 3px 3px 10px black;
+  margin: 10px;
+  background-color:black;
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: orange;
+}
+
 #show_graduates {
   width: 99%;
 }
@@ -112,11 +164,7 @@ footer {
 
 }
 
-.heading_text {
-  font-size: 50px;
-  padding: none;
 
-}
 
 #headline {
   border-radius: 12px;
@@ -186,24 +234,6 @@ footer {
 #extend3_div {
   display: none;
 }
-input {
-  width: 50%;
-  padding: 10px;
-  font-size: 20px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  text-align: center;
-  border-radius: 12px;
-}
-textarea {
-  border-radius: 12px;
-  width: 50%;
-  padding: 10px;
-  font-size: 20px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  text-align: center;
-}
 
 
 #footer1 {
@@ -221,12 +251,7 @@ textarea {
   padding: 60px;
 }
 
-.profile_div {
-  border-radius: 12px;
-  background-color: whitesmoke;
-  color: black;
-  margin: 12px;
-}
+
 #footer2 {
   background-color: black;
   color: white;
@@ -238,5 +263,7 @@ textarea {
   margin-top: 10%;
   padding: 60px;
 }
+
+
 
 /* * { border: 1px solid red; } */
