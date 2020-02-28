@@ -65,7 +65,6 @@ similar to a google search rather than having a social media aspect compared to 
 
  ## [✔] Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables 
 <pre>
-
     [+] Import express from node_modules 
         // See #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js </a>
     
@@ -180,3 +179,18 @@ similar to a google search rather than having a social media aspect compared to 
     [+] See <a href="https://github.com/DariusRain/Grads/blob/master/grads/public/index.js">public/script.js</a> & <a href="https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css">public/stylesheet.css</a> )
 </pre>
 &nbsp;
+
+## [✔] Create the route handlers and endpoints to [_routes/home_route.js_]("https://github.com/DariusRain/Grads/blob/master/grds/routes/home_route.js")
+<pre>
+    [+] Open <a href="https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js">routes/home_route.js</a>
+
+    [+] Create a GET route for the root route for the '/api/home' endpoint and have it render index.pug
+        See #4 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js">routes/home_route.js</a>
+
+    [+] Create a POST route to the same endpoint '/api/home' for new graduates.
+        See #5 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js">routes/home_route.js</a>
+    
+    [+] Create a GET route with an extended endpoint 'api/home/all'.
+        See #6 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js">routes/home_route.js</a>
+
+</pre>
