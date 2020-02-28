@@ -1,10 +1,7 @@
 
- # The Graduate Project.
-<br>
+ # 🎓Grads
 
-# 🎓Grads
-
- ## About project:
+ ### About project:
 Create a full stack application using Express Mongoose Pug and Nodejs. <br>
 This application will be used to display a users job history & education information to companies <br>
 who may be searching to fill a certain job title. (Sounds a little like Linkedin 🤣) <br>
@@ -15,7 +12,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 
- ## [✔] Installation & set up of express mongoose and pug.
+ ### [✔] Installation & set up of express mongoose and pug.
  
 <pre>
 
@@ -63,7 +60,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 
- ## [✔] Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables 
+ ### [✔] Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables 
 <pre>
     [+] Import express from node_modules 
         // See #1 in <a href="https://github.com/DariusRain/Grads/blob/master/grads/server.js">server.js </a>
@@ -110,7 +107,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;    
 
 
- ## [✔] Setup routes and middlewares required for the server.js file (Express).
+ ### [✔] Setup routes and middlewares required for the server.js file (Express).
 <pre>
     [+] Create a home route 
         // Commands
@@ -132,7 +129,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 
- ## [✔] Create a Mongoose schema for graduates (Mongoose).
+ ### [✔] Create a Mongoose schema for graduates (Mongoose).
 <pre>
     [+] Create graduate.js file in the models directory
         // Commands  
@@ -151,7 +148,7 @@ similar to a google search rather than having a social media aspect compared to 
 &nbsp;
 
 
- ## [✔] Set up views for the frontend (Pug).
+ ### [✔] Set up views for the frontend (Pug).
 <pre>
     [+] Create a index.pug file 
         //Commands
@@ -171,7 +168,7 @@ similar to a google search rather than having a social media aspect compared to 
 
 
 
- ## [✔] Add Stylesheet and JavaScript files in the public directory & link it to Pug.
+ ### [✔] Add Stylesheet and JavaScript files in the public directory & link it to Pug.
 <pre>
     [+] Add a script.js and stylesheet.css file in public directory (touch or code public/script.js 
     & public/stylesheet.css).
@@ -180,7 +177,7 @@ similar to a google search rather than having a social media aspect compared to 
 </pre>
 &nbsp;
 
-## [✔] Create the route handlers and endpoints to [_routes/home_route.js_]("https://github.com/DariusRain/Grads/blob/master/grds/routes/home_route.js")
+### [✔] Create the route handlers and endpoints to [_routes/home_route.js_]("https://github.com/DariusRain/Grads/blob/master/grds/routes/home_route.js")
 <pre>
     [+] Open <a href="https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js">routes/home_route.js</a>
 
