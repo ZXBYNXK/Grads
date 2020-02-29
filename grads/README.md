@@ -7,7 +7,7 @@ Last Updated: 2/28/20
 
 # Development process
 
-## Under the hood: 
+# Under the hood: 
 A Full stack application using Express Mongoose Pug and Nodejs. <br>
 Create various route endpoints to to interact with Express. <br>
 Save users to the Mongoose Database using the npm package mongoose. <br> 
@@ -15,32 +15,32 @@ Save users to the Mongoose Database using the npm package mongoose. <br>
 Form sign up features and sending the data to the back end via HTTP Requests -> (GET, POST, PUT, DELETE) <br> 
 &nbsp;
 
-## Sections: 
-[Installation & set up of express mongoose and pug](####installation-&-set-up-of-express-mongoose-and-pug) 
+# Sections: 
+[Installation & set up of express mongoose and pug](#installation-&-set-up-of-express-mongoose-and-pug) 
 &nbsp;
 
-[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](####basic-nodejs-setup-for-express-mongoose-pug-&-enviroment-variables) 
+[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#basic-nodejs-setup-for-express-mongoose-pug-&-enviroment-variables) 
 &nbsp;
 
-[Setup routes and middlewares required for the server.js file](####setup-routes-and-middlewares-required-for-the-server.js-file) 
+[Setup routes and middlewares required for the server.js file](#setup-routes-and-middlewares-required-for-the-server.js-file) 
 &nbsp;
 
-[Create a Mongoose schema for graduates](####create-a-mongoose-schema-for-graduates) 
+[Create a Mongoose schema for graduates](#create-a-mongoose-schema-for-graduates) 
 &nbsp;
 
-[Create pug files for the frontend in the views directory](####create-pug-files-for-the-frontend-in-the-views-directory-pug) 
+[Create pug files for the frontend in the views directory](#create-pug-files-for-the-frontend-in-the-views-directory-pug) 
 &nbsp;
 
-[Create Stylesheet and JavaScript files in the public directory & link it to Pug.](####create-stylesheet-and-javaScript-files-in-the-public-directory) 
+[Create Stylesheet and JavaScript files in the public directory & link it to Pug.](#create-stylesheet-and-javaScript-files-in-the-public-directory) 
 &nbsp;
 
-[Create the route handlers and endpoints to home_route.js file](####create-the-route-handlers-and-endpoints-to-home-route.js-file) 
+[Create the route handlers and endpoints to home_route.js file](#create-the-route-handlers-and-endpoints-to-home-route.js-file) 
 &nbsp;
 
-[Process of building the front end layout](####the-process-of-building-the-frontend-layout)
+[Process of building the front end layout](#the-process-of-building-the-frontend-layout)
 &nbsp;
 
-#### Installation & set up of express mongoose and pug
+# Installation & set up of express mongoose and pug
 
 - [x] Initialize a package.json file
     // Command
@@ -93,7 +93,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 
-#### Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables
+# Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables
 
 
 - [x] Import express from node_modules
@@ -189,7 +189,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-#### Setup routes and middlewares required for the server.js file
+# Setup routes and middlewares required for the server.js file
 
 
 - [x] Create a home route
@@ -233,7 +233,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-#### Create a Mongoose schema for graduates
+# Create a Mongoose schema for graduates
 
 
 - [x] Create graduate.js file in the models directory
@@ -300,7 +300,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 
-#### Create pug files for the frontend in the views directory
+# Create pug files for the frontend in the views directory
 - [x] Create a index.pug file
     // Commands
     // touch or code views/index.pug
@@ -322,7 +322,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
         
 
 
-#### Create Stylesheet and JavaScript files in the public directory
+# Create Stylesheet and JavaScript files in the public directory
 
 
 - [x] Add a script.js and stylesheet.css file in public directory
@@ -335,7 +335,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-#### Create the route handlers and endpoints to home_route.js file
+# Create the route handlers and endpoints to home_route.js file
 &nbsp;
 
 
@@ -392,7 +392,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
     
- #### The process of building the frontend layout
+ # The process of building the frontend layout
 - [ ] 📝 Currently on.
   Getting started with the [index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")file (Home Page)
 
