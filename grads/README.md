@@ -242,7 +242,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 - [x] Import mongoose and use mongoose.Schema() syntax to make a schema
-    // #1 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js")
+    // #1 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js") <br>
     ```javascript
         const mongoose = require('mongoose'),
         GraduateSchema = new mongoose.Schema({
@@ -284,14 +284,14 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 - [x] Export the schema with the mognoose.model() syntax
-    // #2 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js")
+    // #2 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js") <br>
     ```javascript
         module.exports = mongoose.model('Graduate', GraduateSchema);
     ```
 &nbsp;
 
 - [x] Import the model in routes/home_route.js
-    // #3 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
+    // #3 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
     ```javascript
         const Graduate = require('../models/graduate');
     ```
@@ -301,18 +301,18 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 
 # Create pug files for the frontend in the views directory
 - [x] Create a index.pug file
-    // Commands
-    // touch or code views/index.pug
+    // Commands <br>
+    // touch or code views/index.pug <br>
 &nbsp;
 
-- [x] Create a graduate.pug file
-    // Commands
-    // touch or code views/graduate.pug
+- [x] Create a graduate.pug file 
+    // Commands <br>
+    // touch or code views/graduate.pug <br>
 &nbsp;
     
-- [x] Create a errors.pug file
-    // Commads
-    // touch or code views/errors.pug
+- [x] Create a errors.pug file 
+    // Commands <br>
+    // touch or code views/errors.pug <br>
 &nbsp;
     
 - [x] See [views/]("https://github.com/DariusRain/Grads/blob/master/grads/views")
@@ -325,25 +325,24 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 
 
 - [x] Add a script.js and stylesheet.css file in public directory
-//Commands
-// touch or code public/script.js
-// touch or code public/stylesheet.css
+    //Commands <br>
+    // touch or code public/script.js <br>
+    // touch or code public/stylesheet.css <br>
 &nbsp;
 
-- [x] See [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css")
+- [x] See [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css") <br>
 &nbsp;
 &nbsp;
 
 # Create the route handlers and endpoints for the home page 
 &nbsp;
 
-
-- [x] Open [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
+- [x] Open [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
 &nbsp;
 
 
 - [x] Create a GET route for the root route for the '/api/home' endpoint and have it render index.pug
-    // See #4 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
+    // See #4 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
     ```javascript
         router.get('/', (req, res) => {
             res.status(200).render('index');
@@ -352,7 +351,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 - [x] Create a POST route to the same endpoint '/api/home' for new graduates.
-    // See #5 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
+    // See #5 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
     ```javascript
         router.post('/', async (req, res) => {
             const newUser = new Graduate(req.body);
@@ -373,7 +372,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 - [x] Create a GET route with an extended endpoint 'api/home/all'.
-    // See #6 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
+    // See #6 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
     ```javascript
         router.get('/all', async (req, res) => {
             try {
@@ -393,11 +392,11 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     
  # The process of building the frontend layout
 - [ ] 📝 Currently on.
-  Getting started with the [index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")file (Home Page)
+  // Getting started with the [index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")file (Home Page) <br>
 
   - [x] Initial set up for any html doc - open index.pug in editor (Pug ~ Landing Page)
-        // See #1 - #4 in [views/index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")
+        // See #1 - #4 in [views/index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug") <br>
     
-  - [x] Import public static files to index.pug: [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css")  
-        // See #5 in [views/index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")
+  - [x] Import public static files to index.pug: [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css") <br>  
+        // See #5 in [views/index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug") <br>
  
