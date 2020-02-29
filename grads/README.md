@@ -5,7 +5,23 @@ Development Process
 Last Updated: 2/28/20
 </pre>
 
-## Development process
+## Sections:
+
+[Installation & set up of express mongoose and pug](#setting-up-file-structure-and-installing-dependencies)
+
+[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables)
+
+[Setup routes and middlewares required for the server.js file](#setup-routes-and-middlewares-required-for-the-main-server-file)
+
+[Create a Mongoose schema for new graduates](#create-a-mongoose-schema-for-new-graduates)
+
+[Create pug files for the frontend in the views directory](#create-pug-files-for-the-frontend-in-the-views-directory-pug)
+
+[Create Stylesheet and JavaScript files in the public directory.](#create-the-stylesheet-and-javaScript-files-in-the-public-directory)
+
+[Create the route handlers and endpoints to home_route.js file](#create-the-route-handlers-and-endpoints-to-home-page)
+
+[Process of building the front end layout](#the-process-of-building-the-frontend-layout)
 
 ## Under the hood:
 
@@ -15,32 +31,7 @@ Save users to the Mongoose Database using the npm package mongoose. <br>
 (no mongoose is not made by MongoDB, but ontop of the MongoDB Drivers). <bre>
 Form sign up features and sending the data to the back end via HTTP Requests -> (GET, POST, PUT, DELETE) <br>
 
-
-## Sections:
-
-[Installation & set up of express mongoose and pug](#setting-up-file-structure-and-installing-dependencies)
-
-
-[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables)
-
-
-[Setup routes and middlewares required for the server.js file](#setup-routes-and-middlewares-required-for-the-main-server-file)
-
-
-[Create a Mongoose schema for new graduates](#create-a-mongoose-schema-for-new-graduates)
-
-
-[Create pug files for the frontend in the views directory](#create-pug-files-for-the-frontend-in-the-views-directory-pug)
-
-
-[Create Stylesheet and JavaScript files in the public directory.](#create-the-stylesheet-and-javaScript-files-in-the-public-directory)
-
-
-[Create the route handlers and endpoints to home_route.js file](#create-the-route-handlers-and-endpoints-to-home-page)
-
-
-[Process of building the front end layout](#the-process-of-building-the-frontend-layout)
-
+<hr>
 
 ### Setting up file structure and installing dependencies
 
@@ -49,24 +40,20 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 // Command <br>
 // npm init -y <br>
 
-
 #### Install Express
 
 // Command <br>
 // npm i express <br>
-
 
 #### Install Mongoose
 
 // Command <br>
 // npm i mongoose <br>
 
-
 #### Install pug
 
 // Command <br>
 // npm i pug <br>
-
 
 #### Create a server.js, app.js or index.js file (Main server file)
 
@@ -74,46 +61,39 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 // Visual Studio Code: code server.js <br>
 // touch server.js -> Then open in editor <br>
 
-
 #### Create a public directory (Static files)
 
 //Command <br>
 // mkdir public <br>
-
 
 #### Create a views directory (for pug files)
 
 // Command <br>
 // mkdir views <br>
 
-
 #### Create a routes directory
 
 // Command <br>
 // mkdir routes <br>
-
 
 #### Create a models directory (mkdir models).
 
 // Commmand <br>
 // mkdir models <br>
 
-
 #### Open server.js <br>
 
-
-
+<hr>
 
 ### Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
 
 #### Import express from node_modules
 
 // #1 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js)
+
 ```javascript
 const express = require("express");
 ```
-
-
 
 #### Import mongoose from node_modules
 
@@ -123,8 +103,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 ```
 
-
-
 #### Create an instance of an express application
 
 // #3 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
@@ -132,8 +110,6 @@ const mongoose = require("mongoose");
 ```javascript
 const app = express();
 ```
-
-
 
 #### Import the path core module
 
@@ -143,8 +119,6 @@ const app = express();
 const path = require("path");
 ```
 
-
-
 #### Set the view engine for express to pug
 
 // #5 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
@@ -152,8 +126,6 @@ const path = require("path");
 ```javascript
 app.set("views", path.join(__dirname, "views"));
 ```
-
-
 
 #### Set the express view-engine to pug
 
@@ -163,8 +135,6 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 ```
 
-
-
 #### Use the express.static() for the public directory.
 
 // #7 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
@@ -172,8 +142,6 @@ app.set("view engine", "pug");
 ```javascript
 app.use(express.static("public"));
 ```
-
-
 
 #### Create a bash script outside of the project, a quick tool to set enviroment variables.
 
@@ -194,7 +162,6 @@ app.use(express.static("public"));
 // The '.' states the current directory you are in & the path to the bash script you want to execute <br>
 // Should see message from the script that it is set to a specific enviroment. <br>
 
-
 #### Now assign the enviroment variables value using 'process.env'
 
 // #8 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
@@ -203,8 +170,6 @@ app.use(express.static("public"));
 const PORT = process.env.PORT,
   DB = process.env.DB;
 ```
-
-
 
 #### Now use the above values to connect to cloud or local database & set server to listen on a port.
 
@@ -223,9 +188,7 @@ app.listen(PORT, () => {
   console.log(`Listening on ${PORT}... `);
 });
 ```
-
-
-
+<hr>
 
 ### Setup routes and middlewares required for the main server file
 
@@ -234,7 +197,6 @@ app.listen(PORT, () => {
 // Commands <br>
 // Visual Studio Code: code routes/home_route.js <br>
 // touch routes/home_route.js <br>
-
 
 #### Write to 'home_route.js' and create an instance of an express router to be exported
 
@@ -245,8 +207,6 @@ const express = require("express"),
   router = express.Router();
 ```
 
-
-
 #### Export that router, then now available for import in any nodejs file.
 
 // #2 in [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
@@ -254,8 +214,6 @@ const express = require("express"),
 ```javascript
 module.exports = router;
 ```
-
-
 
 #### Then import and use that router as middleware in the server.js file
 
@@ -269,8 +227,6 @@ app.use("/api/home", homeRoute);
 app.use("/api/graduates", graduatesRoute);
 ```
 
-
-
 #### Use built-in express middleware called express.json() so incoming requests can be parsed.
 
 // #11 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
@@ -279,8 +235,7 @@ app.use("/api/graduates", graduatesRoute);
 app.use(express.json());
 ```
 
-
-
+<hr>
 
 ### Create a Mongoose schema for new graduates
 
@@ -289,7 +244,6 @@ app.use(express.json());
 // Commands <br>
 // Visusal Studio Code: code models/graduate.js <br>
 // touch models/graduate.js (Then open it) <br>
-
 
 #### Import mongoose and use mongoose.Schema() syntax to make a schema
 
@@ -333,8 +287,6 @@ const mongoose = require("mongoose"),
   });
 ```
 
-
-
 #### Export the schema with the mognoose.model() syntax
 
 // #2 in [models/graduate.js](https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js) <br>
@@ -342,8 +294,6 @@ const mongoose = require("mongoose"),
 ```javascript
 module.exports = mongoose.model("Graduate", GraduateSchema);
 ```
-
-
 
 #### Import the model in routes/home_route.js
 
@@ -353,8 +303,7 @@ module.exports = mongoose.model("Graduate", GraduateSchema);
 const Graduate = require("../models/graduate");
 ```
 
-
-
+<hr>
 
 ### Create pug files for the frontend in the views directory
 
@@ -363,23 +312,17 @@ const Graduate = require("../models/graduate");
 // Commands <br>
 // touch or code views/index.pug <br>
 
-
 #### Create a graduate.pug file
 
 // Commands <br>
 // touch or code views/graduate.pug <br>
-
 
 #### Create a errors.pug file
 
 // Commands <br>
 // touch or code views/errors.pug <br>
 
-
 #### See [views/](https://github.com/DariusRain/Grads/blob/master/grads/views")
-
-
-
 
 ### Create Stylesheet and JavaScript files in the public directory
 
@@ -389,19 +332,11 @@ const Graduate = require("../models/graduate");
 // touch or code public/script.js <br>
 // touch or code public/stylesheet.css <br>
 
-
 #### See [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
-
-
-
 
 ### Create the route handlers and endpoints for the home page
 
-
-
 #### Open [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
-
-
 
 #### Create a GET route for the root route for the '/api/home' endpoint and have it render index.pug
 
@@ -412,8 +347,6 @@ router.get("/", (req, res) => {
   res.status(200).render("index");
 });
 ```
-
-
 
 #### Create a POST route to the same endpoint '/api/home' for new graduates.
 
@@ -436,8 +369,6 @@ router.post("/", async (req, res) => {
 });
 ```
 
-
-
 #### Create a GET route with an extended endpoint 'api/home/all'.
 
 // See #6 in [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
@@ -455,8 +386,7 @@ router.get("/all", async (req, res) => {
 });
 ```
 
-
-
+<hr>
 
 ### The process of building the frontend layout
 
