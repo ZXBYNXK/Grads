@@ -5,7 +5,7 @@ Development Process
 Last Updated: 2/28/20
 </pre>
 
-✔ Sections:
+# Sections:
 
 [Installation & set up of express mongoose and pug](#setting-up-file-structure-and-installing-dependencies)
 
