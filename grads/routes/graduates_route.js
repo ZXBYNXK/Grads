@@ -13,7 +13,7 @@ const express = require('express'),
                 name: `${graduate.firstname} ${graduate.lastname}`,
                 avatar: graduate.avatar,
                 about: graduate.about,
-                education: graduate.eduaction,
+                education: graduate.education,
                 email: graduate.email,
                 jobtitle: graduate.jobtitle
             } 

@@ -54,10 +54,26 @@ html
     //-     This will contain all of the elements 
     //-     that display & interact with the client.      
     body
+        //- #6
+        //- Creating the banner for homepage         
+        //- header (Used for top page elements)
+        //- Contents:
+        //-     Notice there are IDs and Classes These are available
+        //-     for css or javascript files to access as long as the css & js file(s)
+        //-     are imported like above in #5. Javascript and CSS both can change the
+        //-     the style of the DOM (Document Object Model) but that is the only thing CSS can do.
+        //-     Javascript is able to access and modify all the contents of the DOM.
         header(class="container_row_1" id="header") 
             span(id="heading_text") 🎓 Grads
         
-        
+        //- #7 
+        //- Creating the menu
+        //- Div (Commonly used to contain child elements)
+        //- Buttons 
+        //- Contents: 
+        //-     These buttons will toggle other div elements
+        //- to either appear or dissapear from the screen.
+        //- By default none of the following will show up.
         div(class="container_row_1")
             button(class="header_buttons" id="signup_button") Sign Up
             button(class="header_buttons" id="search_button") Search

@@ -23,16 +23,13 @@
             about: {
                 type: String,
                 default: 'N/A',
-                min: 10
             },
             education: {
                 type: String,
                 default: 'N/A',
-                min: 5
             },
             jobtitle: {
                 type: String,
-                min: 1,
                 default: 'N/A'
             }
             

@@ -47,11 +47,28 @@ const Graduate = require('../models/graduate');
 // to the database. If not then the catch block should 
 // execute its response. 
     router.post('/', async (req, res) => {
-        console.log(req.body)
-        const newUser = new Graduate(req.body)
+        let {firstname, email, lastname, avatar, education, jobtitle, about} = req.body
+    
+        if(avatar === 'N/A') {
+            avatar = 'https://bit.ly/2wzdL2x'
+        }
+        
+        const request = {
+            avatar,
+            firstname,
+            lastname,
+            email,
+            about,
+            education,
+            jobtitle
+        }
+        const newUser = new Graduate(request)
+        
+
         try {
             console.log('Attempting post request.')
             const savedUser = await newUser.save();
+            console.log(savedUser)
             res.status(201).json({
                 message: `Thank you ${req.body.firstname}!`
             })
