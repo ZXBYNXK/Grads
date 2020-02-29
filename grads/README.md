@@ -12,28 +12,28 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 &nbsp;
 
 ### Sections: <br>
-[Installation & set up of express mongoose and pug](#✔ Installation & set up of express mongoose and pug) <br>
+[Installation & set up of express mongoose and pug](#✔-installation-&-set-up-of-express-mongoose-and-pug) <br>
 &nbsp;
 
-[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#✔ Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables) <br>
+[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#✔-Basic-Nodejs-setup-for-Express-,--Mongoose-,-Pug-&-Enviroment-Variables) <br>
 &nbsp;
 
-[Setup routes and middlewares required for the server.js file](#✔ Setup routes and middlewares required for the server.js file -Express) <br>
+[Setup routes and middlewares required for the server.js file](#✔-Setup-routes-and-middlewares-required-for-the-server.js-file--Express) <br>
 &nbsp;
 
-[Create a Mongoose schema for graduates](# ✔ Create a Mongoose schema for graduates -Mongoose) <br>
+[Create a Mongoose schema for graduates](#✔-Create-a-Mongoose-schema-for-graduates--Mongoose) <br>
 &nbsp;
 
-[Create pug files for the frontend in the views directory](#✔ Create pug files for the frontend in the views directory -Pug) <br>
+[Create pug files for the frontend in the views directory](#✔-Create-pug-files-for-the-frontend-in-the-views-directory--Pug) <br>
 &nbsp;
 
-[Create Stylesheet and JavaScript files in the public directory & link it to Pug.](#✔ Create Stylesheet and JavaScript files in the public directory) <br>
+[Create Stylesheet and JavaScript files in the public directory & link it to Pug.](#✔-Create-Stylesheet-and-JavaScript-files-in-the-public-directory) <br>
 &nbsp;
 
-[Create the route handlers and endpoints to home_route.js file](#✔ Create the route handlers and endpoints to home_route.js file) <br>
+[Create the route handlers and endpoints to home_route.js file](#✔-Create-the-route-handlers-and-endpoints-to-home-route.js-file) <br>
 &nbsp;
 
-[Process of building the front end layout](#📝 The process of building the frontend layout)
+[Process of building the front end layout](#📝-The-process-of-building-the-frontend-layout)
 &nbsp;
 
 # ✔ Installation & set up of express mongoose and pug
