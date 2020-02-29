@@ -18,24 +18,17 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 #### Sections: 
 [Installation & set up of express mongoose and pug](####setting-up-file-structure-and-installing-dependencies) 
 
-
 [Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](####basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables) 
-
 
 [Setup routes and middlewares required for the server.js file](####setup-routes-and-middlewares-required-for-the-main-server-file) 
 
-
 [Create a Mongoose schema for new graduates](####create-a-mongoose-schema-for-new-graduates) 
-
 
 [Create pug files for the frontend in the views directory](####reate-pug-files-for-the-frontend-in-the-views-directory-pug) 
 
-
 [Create Stylesheet and JavaScript files in the public directory.](####create-the-stylesheet-and-javaScript-files-in-the-public-directory) 
 
-
 [Create the route handlers and endpoints to home_route.js file](####create-the-route-handlers-and-endpoints-to-home-page) 
-
 
 [Process of building the front end layout](####the-process-of-building-the-frontend-layout)
 
