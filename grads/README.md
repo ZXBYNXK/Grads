@@ -108,8 +108,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 
 #### Import express from node_modules
 
-// #1 in [_server.js_]("https://github.com/DariusRain/Grads/blob/master/grads/server.js") <br>
-
+// #1 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js)
 ```javascript
 const express = require("express");
 ```
