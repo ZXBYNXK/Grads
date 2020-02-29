@@ -1,13 +1,13 @@
-# 🎓Grads
+#### 🎓Grads
 
 <p>
 Development Process  
 Last Updated: 2/28/20
 </p>
 
-# Development process
+#### Development process
 
-# Under the hood: 
+#### Under the hood: 
 A Full stack application using Express Mongoose Pug and Nodejs. <br>
 Create various route endpoints to to interact with Express. <br>
 Save users to the Mongoose Database using the npm package mongoose. <br> 
@@ -15,32 +15,32 @@ Save users to the Mongoose Database using the npm package mongoose. <br>
 Form sign up features and sending the data to the back end via HTTP Requests -> (GET, POST, PUT, DELETE) <br> 
 &nbsp;
 
-# Sections: 
-[Installation & set up of express mongoose and pug](#setting-up-file-structure-and-installing-dependencies) 
+#### Sections: 
+[Installation & set up of express mongoose and pug](####setting-up-file-structure-and-installing-dependencies) 
 &nbsp;
 
-[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables) 
+[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](####basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables) 
 &nbsp;
 
-[Setup routes and middlewares required for the server.js file](#setup-routes-and-middlewares-required-for-the-main-server-file) 
+[Setup routes and middlewares required for the server.js file](####setup-routes-and-middlewares-required-for-the-main-server-file) 
 &nbsp;
 
-[Create a Mongoose schema for new graduates](#create-a-mongoose-schema-for-new-graduates) 
+[Create a Mongoose schema for new graduates](####create-a-mongoose-schema-for-new-graduates) 
 &nbsp;
 
-[Create pug files for the frontend in the views directory](#create-pug-files-for-the-frontend-in-the-views-directory-pug) 
+[Create pug files for the frontend in the views directory](####reate-pug-files-for-the-frontend-in-the-views-directory-pug) 
 &nbsp;
 
-[Create Stylesheet and JavaScript files in the public directory.](#create-the-stylesheet-and-javaScript-files-in-the-public-directory) 
+[Create Stylesheet and JavaScript files in the public directory.](####create-the-stylesheet-and-javaScript-files-in-the-public-directory) 
 &nbsp;
 
-[Create the route handlers and endpoints to home_route.js file](#create-the-route-handlers-and-endpoints-to-home-page) 
+[Create the route handlers and endpoints to home_route.js file](####create-the-route-handlers-and-endpoints-to-home-page) 
 &nbsp;
 
-[Process of building the front end layout](#the-process-of-building-the-frontend-layout)
+[Process of building the front end layout](####the-process-of-building-the-frontend-layout)
 &nbsp;
 
-# Setting up file structure and installing dependencies 
+#### Setting up file structure and installing dependencies 
 
 - [x] Initialize a package.json file
     // Command <br>
@@ -93,7 +93,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 
-# Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
+#### Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
 
 
 - [x] Import express from node_modules
@@ -189,7 +189,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-# Setup routes and middlewares required for the main server file
+#### Setup routes and middlewares required for the main server file
 
 
 - [x] Create a home route
@@ -233,7 +233,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-# Create a Mongoose schema for new graduates
+#### Create a Mongoose schema for new graduates
 
 - [x] Create graduate.js file in the models directory
     // Commands <br>
@@ -299,7 +299,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 
-# Create pug files for the frontend in the views directory
+#### Create pug files for the frontend in the views directory
 - [x] Create a index.pug file
     // Commands
     // touch or code views/index.pug
@@ -321,7 +321,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
         
 
 
-# Create Stylesheet and JavaScript files in the public directory
+#### Create Stylesheet and JavaScript files in the public directory
 
 
 - [x] Add a script.js and stylesheet.css file in public directory
@@ -334,7 +334,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-# Create the route handlers and endpoints for the home page 
+#### Create the route handlers and endpoints for the home page 
 &nbsp;
 
 
@@ -391,7 +391,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
     
- # The process of building the frontend layout
+ #### The process of building the frontend layout
 - [ ] 📝 Currently on.
   Getting started with the [index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")file (Home Page)
 
