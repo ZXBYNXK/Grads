@@ -40,112 +40,112 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 [Process of building the front end layout](#the-process-of-building-the-frontend-layout)
 &nbsp;
 
-### Setting up file structure and installing dependencies 
+# Setting up file structure and installing dependencies 
 
-#### Initialize a package.json file
+- [x] Initialize a package.json file
     // Command <br>
     // npm init -y <br>
 &nbsp;
 
-#### Install Express
+- [x] Install Express
     // Command <br>
     // npm i express <br>
 &nbsp;
 
-#### Install  Mongoose 
+- [x] Install  Mongoose 
     // Command <br>
     // npm i mongoose <br>
 &nbsp;
 
-#### Install pug
+- [x] Install pug
     // Command <br>
     // npm i pug <br>
 &nbsp;
 
-#### Create a server.js, app.js or index.js file (Main server file)
+- [x] Create a server.js, app.js or index.js file (Main server file)
     // Commands <br>
     // Visual Studio Code: code server.js <br>
     // touch server.js -> Then open in editor <br>
 &nbsp;
 
-#### Create a public directory (Static files)
+- [x] Create a public directory (Static files)
     //Command <br>
     // mkdir public <br>
 &nbsp;
 
-#### Create a views directory (for pug files)
+- [x] Create a views directory (for pug files)
     // Command <br>
     // mkdir views <br>
 &nbsp;
 
-#### Create a routes directory
+- [x] Create a routes directory
     // Command <br>
     // mkdir routes <br>
 &nbsp;
 
-#### Create a models directory (mkdir models).
+- [x] Create a models directory (mkdir models).
     // Commmand <br>
     // mkdir models <br>
 &nbsp;
 
-#### Open server.js <br>
+- [x] Open server.js <br>
 &nbsp;
 &nbsp;
 
 
-### Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
+# Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
 
 
-#### Import express from node_modules
+- [x] Import express from node_modules
     // #1 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         const express = require("express");
     ```
 &nbsp;
 
-#### Import mongoose from node_modules
+- [x] Import mongoose from node_modules
     // #2 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         const mongoose = require("mongoose");
     ```
 &nbsp;
 
-#### Create an instance of an express application
+- [x] Create an instance of an express application
     // #3 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         const app = express();
     ```
 &nbsp;
 
-#### Import the path core module
+- [x] Import the path core module
     // #4 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
             const path = require('path');
     ```
 &nbsp;
 
-#### Set the view engine for express to pug
+- [x] Set the view engine for express to pug
     // #5 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         app.set("views", path.join(__dirname, 'views'));
     ```
 &nbsp;
 
-#### Set the express view-engine to pug
+- [x] Set the express view-engine to pug
     // #6 in in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         app.set("view engine", "pug");
     ```
 &nbsp;
 
-#### Use the express.static() for the public directory.
+- [x] Use the express.static() for the public directory.
     // #7 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         app.use(express.static("public"));
     ```
 &nbsp;
 
-#### Create a bash script outside of the project, a quick tool to set enviroment variables.
+- [x] Create a bash script outside of the project, a quick tool to set enviroment variables.
     // Commands  <br>
     // nano ../bash/set_enviroment_development.sh  <br>
     ```bash
@@ -162,13 +162,13 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     // Should see message from the script that it is set to a specific enviroment.  <br>
 &nbsp;
 
-#### Now assign the enviroment variables value using 'process.env' 
+- [x] Now assign the enviroment variables value using 'process.env' 
     // #8 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         const PORT = process.env.PORT,
         DB = process.env.DB;
     ```
-    #### Now use the above values to connect to cloud or local database & set server to listen on a port.
+    - [x] Now use the above values to connect to cloud or local database & set server to listen on a port.
     // #12 - #13 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         mongoose.connect(
@@ -189,16 +189,16 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-### Setup routes and middlewares required for the main server file
+# Setup routes and middlewares required for the main server file
 
 
-#### Create a home route
+- [x] Create a home route
     // Commands  <br>
     // Visual Studio Code: code routes/home_route.js  <br>
     // touch routes/home_route.js  <br>
 &nbsp;
 
-#### Write to 'home_route.js' and create an instance of an express router to be exported
+- [x] Write to 'home_route.js' and create an instance of an express router to be exported
     // #1 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
     ```javascript
         const express = require('express'),
@@ -206,14 +206,14 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     ```
 &nbsp;
 
-#### Export that router, then now available for import in any nodejs file.
+- [x] Export that router, then now available for import in any nodejs file.
     // #2 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
     ```javascript
         module.exports = router;
     ```
 &nbsp;
 
-#### Then import and use that router as middleware in the server.js file
+- [x] Then import and use that router as middleware in the server.js file
     // #9 & #10 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js") <br>
     ```javascript
         const homeRoute = require("./routes/home_route"),
@@ -224,7 +224,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     ```
 &nbsp;
 
-#### Use built-in express middleware called express.json() so incoming requests can be parsed.
+- [x] Use built-in express middleware called express.json() so incoming requests can be parsed.
     // #11 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js") <br>
     ```javascript
         app.use(express.json());
@@ -233,15 +233,15 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-### Create a Mongoose schema for new graduates
+# Create a Mongoose schema for new graduates
 
-#### Create graduate.js file in the models directory
+- [x] Create graduate.js file in the models directory
     // Commands <br>
     // Visusal Studio Code: code models/graduate.js <br>
     // touch models/graduate.js (Then open it) <br>
 &nbsp;
 
-#### Import mongoose and use mongoose.Schema() syntax to make a schema
+- [x] Import mongoose and use mongoose.Schema() syntax to make a schema
     // #1 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js")
     ```javascript
         const mongoose = require('mongoose'),
@@ -283,14 +283,14 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     ```
 &nbsp;
 
-#### Export the schema with the mognoose.model() syntax
+- [x] Export the schema with the mognoose.model() syntax
     // #2 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js")
     ```javascript
         module.exports = mongoose.model('Graduate', GraduateSchema);
     ```
 &nbsp;
 
-#### Import the model in routes/home_route.js
+- [x] Import the model in routes/home_route.js
     // #3 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
     ```javascript
         const Graduate = require('../models/graduate');
@@ -299,50 +299,50 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 
-### Create pug files for the frontend in the views directory
-#### Create a index.pug file
+# Create pug files for the frontend in the views directory
+- [x] Create a index.pug file
     // Commands
     // touch or code views/index.pug
 &nbsp;
 
-#### Create a graduate.pug file
+- [x] Create a graduate.pug file
     // Commands
     // touch or code views/graduate.pug
 &nbsp;
     
-#### Create a errors.pug file
+- [x] Create a errors.pug file
     // Commads
     // touch or code views/errors.pug
 &nbsp;
     
-#### See [views/]("https://github.com/DariusRain/Grads/blob/master/grads/views")
+- [x] See [views/]("https://github.com/DariusRain/Grads/blob/master/grads/views")
 &nbsp;
 &nbsp;
         
 
 
-### Create Stylesheet and JavaScript files in the public directory
+# Create Stylesheet and JavaScript files in the public directory
 
 
-#### Add a script.js and stylesheet.css file in public directory
+- [x] Add a script.js and stylesheet.css file in public directory
 //Commands
 // touch or code public/script.js
 // touch or code public/stylesheet.css
 &nbsp;
 
-#### See [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css")
+- [x] See [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css")
 &nbsp;
 &nbsp;
 
-### Create the route handlers and endpoints for the home page 
+# Create the route handlers and endpoints for the home page 
 &nbsp;
 
 
-#### Open [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
+- [x] Open [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
 &nbsp;
 
 
-#### Create a GET route for the root route for the '/api/home' endpoint and have it render index.pug
+- [x] Create a GET route for the root route for the '/api/home' endpoint and have it render index.pug
     // See #4 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
     ```javascript
         router.get('/', (req, res) => {
@@ -351,7 +351,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     ```
 &nbsp;
 
-#### Create a POST route to the same endpoint '/api/home' for new graduates.
+- [x] Create a POST route to the same endpoint '/api/home' for new graduates.
     // See #5 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
     ```javascript
         router.post('/', async (req, res) => {
@@ -372,7 +372,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     ```
 &nbsp;
 
-#### Create a GET route with an extended endpoint 'api/home/all'.
+- [x] Create a GET route with an extended endpoint 'api/home/all'.
     // See #6 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
     ```javascript
         router.get('/all', async (req, res) => {
@@ -391,13 +391,13 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
     
- ### The process of building the frontend layout
+ # The process of building the frontend layout
 - [ ] 📝 Currently on.
   Getting started with the [index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")file (Home Page)
 
-  #### Initial set up for any html doc - open index.pug in editor (Pug ~ Landing Page)
+  - [x] Initial set up for any html doc - open index.pug in editor (Pug ~ Landing Page)
         // See #1 - #4 in [views/index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")
     
-  #### Import public static files to index.pug: [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css")  
+  - [x] Import public static files to index.pug: [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css")  
         // See #5 in [views/index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")
  
