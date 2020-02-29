@@ -39,53 +39,53 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 ## 1. Setup project structure and installing dependencies
 <hr>
 
-#### ✔ Initialize a package.json file
+### ✔ Initialize a package.json file
 
 // Command <br>
 // npm init -y <br>
 
-#### ✔ Install Express
+### ✔ Install Express
 
 // Command <br>
 // npm i express <br>
 
-#### ✔ Install Mongoose
+### ✔ Install Mongoose
 
 // Command <br>
 // npm i mongoose <br>
 
-#### ✔ Install pug
+### ✔ Install pug
 
 // Command <br>
 // npm i pug <br>
 
-#### ✔ Create a server.js, app.js or index.js file (Main server file)
+### ✔ Create a server.js, app.js or index.js file (Main server file)
 
 // Commands <br>
 // Visual Studio Code: code server.js <br>
 // touch server.js -> Then open in editor <br>
 
-#### ✔ Create a public directory (Static files)
+### ✔ Create a public directory (Static files)
 
 //Command <br>
 // mkdir public <br>
 
-#### ✔ Create a views directory (for pug files)
+### ✔ Create a views directory (for pug files)
 
 // Command <br>
 // mkdir views <br>
 
-#### ✔ Create a routes directory
+### ✔ Create a routes directory
 
 // Command <br>
 // mkdir routes <br>
 
-#### ✔ Create a models directory (mkdir models).
+### ✔ Create a models directory (mkdir models).
 
 // Commmand <br>
 // mkdir models <br>
 
-#### ✔ Open server.js <br>
+### ✔ Open server.js <br>
 
 &nbsp;
 &nbsp;
@@ -96,7 +96,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 ## 2. Nodejs setup for Express Mongoose Pug and Enviroment Variables
 <hr>
 
-#### ✔ Import express from node_modules
+### ✔ Import express from node_modules
 
 // #1 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js)
 
@@ -104,7 +104,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 const express = require("express");
 ```
 
-#### ✔ Import mongoose from node_modules
+### ✔ Import mongoose from node_modules
 
 // #2 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -112,7 +112,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 ```
 
-#### ✔ Create an instance of an express application
+### ✔ Create an instance of an express application
 
 // #3 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -120,7 +120,7 @@ const mongoose = require("mongoose");
 const app = express();
 ```
 
-#### ✔ Import the path core module
+### ✔ Import the path core module
 
 // #4 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -128,7 +128,7 @@ const app = express();
 const path = require("path");
 ```
 
-#### ✔ Set the view engine for express to pug
+### ✔ Set the view engine for express to pug
 
 // #5 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -136,7 +136,7 @@ const path = require("path");
 app.set("views", path.join(__dirname, "views"));
 ```
 
-#### ✔ Set the express view-engine to pug
+### ✔ Set the express view-engine to pug
 
 // #6 in in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -144,7 +144,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 ```
 
-#### ✔ Use the express.static() for the public directory.
+### ✔ Use the express.static() for the public directory.
 
 // #7 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -152,7 +152,7 @@ app.set("view engine", "pug");
 app.use(express.static("public"));
 ```
 
-#### ✔ Create a bash script outside of the project, a quick tool to set enviroment variables.
+### ✔ Create a bash script outside of the project, a quick tool to set enviroment variables.
 
 // Commands <br>
 // nano ../bash/set_enviroment_development.sh <br>
@@ -171,7 +171,7 @@ app.use(express.static("public"));
 // The '.' states the current directory you are in & the path to the bash script you want to execute <br>
 // Should see message from the script that it is set to a specific enviroment. <br>
 
-#### ✔ Now assign the enviroment variables value using 'process.env'
+### ✔ Now assign the enviroment variables value using 'process.env'
 
 // #8 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -180,7 +180,7 @@ const PORT = process.env.PORT,
   DB = process.env.DB;
 ```
 
-#### ✔ Now use the above values to connect to cloud or local database & set server to listen on a port.
+### ✔ Now use the above values to connect to cloud or local database & set server to listen on a port.
 
 // #12 - #13 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -206,13 +206,13 @@ app.listen(PORT, () => {
 ## 3. Setup routes and middlewares required for the main server file
 <hr>
 
-#### ✔ Create a home route
+### ✔ Create a home route
 
 // Commands <br>
 // Visual Studio Code: code routes/home_route.js <br>
 // touch routes/home_route.js <br>
 
-#### ✔ Write to 'home_route.js' and create an instance of an express router to be exported
+### ✔ Write to 'home_route.js' and create an instance of an express router to be exported
 
 // #1 in [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
 
@@ -221,7 +221,7 @@ const express = require("express"),
   router = express.Router();
 ```
 
-#### ✔ Export that router, then now available for import in any nodejs file.
+### ✔ Export that router, then now available for import in any nodejs file.
 
 // #2 in [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
 
@@ -229,7 +229,7 @@ const express = require("express"),
 module.exports = router;
 ```
 
-#### ✔ Then import and use that router as middleware in the server.js file
+### ✔ Then import and use that router as middleware in the server.js file
 
 // #9 & #10 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -241,7 +241,7 @@ app.use("/api/home", homeRoute);
 app.use("/api/graduates", graduatesRoute);
 ```
 
-#### ✔ Use built-in express middleware called express.json() so incoming requests can be parsed.
+### ✔ Use built-in express middleware called express.json() so incoming requests can be parsed.
 
 // #11 in [server.js](https://github.com/DariusRain/Grads/blob/master/grads/server.js) <br>
 
@@ -256,13 +256,13 @@ app.use(express.json());
 ## 4. Create a Mongoose schema for new graduates
 <hr>
 
-#### ✔ Create graduate.js file in the models directory
+### ✔ Create graduate.js file in the models directory
 
 // Commands <br>
 // Visusal Studio Code: code models/graduate.js <br>
 // touch models/graduate.js (Then open it) <br>
 
-#### ✔ Import mongoose and use mongoose.Schema() syntax to make a schema
+### ✔ Import mongoose and use mongoose.Schema() syntax to make a schema
 
 // #1 in [models/graduate.js](https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js) <br>
 
@@ -304,7 +304,7 @@ const mongoose = require("mongoose"),
   });
 ```
 
-#### ✔ Export the schema with the mognoose.model() syntax
+### ✔ Export the schema with the mognoose.model() syntax
 
 // #2 in [models/graduate.js](https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js) <br>
 
@@ -312,7 +312,7 @@ const mongoose = require("mongoose"),
 module.exports = mongoose.model("Graduate", GraduateSchema);
 ```
 
-#### ✔ Import the model in routes/home_route.js
+### ✔ Import the model in routes/home_route.js
 
 // #3 in [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
 
@@ -328,22 +328,22 @@ const Graduate = require("../models/graduate");
 ## 5. Create pug files for the frontend in the views directory
 <hr>
 
-#### ✔ Create a index.pug file
+### ✔ Create a index.pug file
 
 // Commands <br>
 // touch or code views/index.pug <br>
 
-#### ✔ Create a graduate.pug file
+### ✔ Create a graduate.pug file
 
 // Commands <br>
 // touch or code views/graduate.pug <br>
 
-#### ✔ Create a errors.pug file
+### ✔ Create a errors.pug file
 
 // Commands <br>
 // touch or code views/errors.pug <br>
 
-#### ✔ See [views/](https://github.com/DariusRain/Grads/blob/master/grads/views)
+### ✔ See [views/](https://github.com/DariusRain/Grads/blob/master/grads/views)
 
 &nbsp;
 &nbsp;
@@ -352,13 +352,13 @@ const Graduate = require("../models/graduate");
 ## 6. Create Stylesheet and JavaScript files in the public directory
 <hr>
 
-#### ✔ Add a script.js and stylesheet.css file in public directory
+### ✔ Add a script.js and stylesheet.css file in public directory
 
 //Commands <br>
 // touch or code public/script.js <br>
 // touch or code public/stylesheet.css <br>
 
-#### ✔ See [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
+### ✔ See [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
 
 &nbsp;
 &nbsp;
@@ -367,9 +367,9 @@ const Graduate = require("../models/graduate");
 ## 7. Create the route handlers and endpoints for the home page
 <hr>
 
-#### ✔ Open [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
+### ✔ Open [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
 
-#### ✔ Create a GET route for the root route for the '/api/home' endpoint and have it render index.pug
+### ✔ Create a GET route for the root route for the '/api/home' endpoint and have it render index.pug
 
 // See #4 in [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
 
@@ -379,7 +379,7 @@ router.get("/", (req, res) => {
 });
 ```
 
-#### ✔ Create a POST route to the same endpoint '/api/home' for new graduates.
+### ✔ Create a POST route to the same endpoint '/api/home' for new graduates.
 
 // See #5 in [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
 
@@ -400,7 +400,7 @@ router.post("/", async (req, res) => {
 });
 ```
 
-#### ✔ Create a GET route with an extended endpoint 'api/home/all'.
+### ✔ Create a GET route with an extended endpoint 'api/home/all'.
 
 // See #6 in [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
 
@@ -426,10 +426,10 @@ router.get("/all", async (req, res) => {
 
 <hr>
 
-#### ✔ Initial set up for any html doc - open index.pug in editor (Pug ~ Landing Page)
+### ✔ Initial set up for any html doc - open index.pug in editor (Pug ~ Landing Page)
 
 // See #1 - #4 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
 
-#### ✔ Import public static files to index.pug: [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
+### ✔ Import public static files to index.pug: [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
 
 // See #5 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
