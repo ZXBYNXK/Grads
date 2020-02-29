@@ -21,7 +21,7 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 [Setup routes and middlewares required for the server.js file](#✔-Setup-routes-and-middlewares-required-for-the-server.js-file--Express) <br>
 &nbsp;
 
-[Create a Mongoose schema for graduates](#Create-a-Mongoose-schema-for-graduates--Mongoose) <br>
+[Create a Mongoose schema for graduates](#create-a-mongoose-schema-for-graduates) <br>
 &nbsp;
 
 [Create pug files for the frontend in the views directory](#✔-Create-pug-files-for-the-frontend-in-the-views-directory--Pug) <br>
@@ -229,7 +229,7 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 &nbsp;
 &nbsp;
 
-# Create a Mongoose schema for graduates -Mongoose
+# Create a Mongoose schema for graduates
 
 
 - [x] Create graduate.js file in the models directory
