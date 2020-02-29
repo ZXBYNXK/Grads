@@ -1,13 +1,13 @@
-#### 🎓Grads
+# 🎓Grads
 
 <p>
 Development Process  
 Last Updated: 2/28/20
 </p>
 
-#### Development process
+## Development process
 
-#### Under the hood: 
+## Under the hood: 
 A Full stack application using Express Mongoose Pug and Nodejs. <br>
 Create various route endpoints to to interact with Express. <br>
 Save users to the Mongoose Database using the npm package mongoose. <br> 
@@ -15,7 +15,7 @@ Save users to the Mongoose Database using the npm package mongoose. <br>
 Form sign up features and sending the data to the back end via HTTP Requests -> (GET, POST, PUT, DELETE) <br> 
 
 
-#### Sections: 
+### Sections: 
 [Installation & set up of express mongoose and pug](####setting-up-file-structure-and-installing-dependencies) 
 
 [Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](####basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables) 
