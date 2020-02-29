@@ -17,7 +17,7 @@ Last Updated: 2/28/20
 
 5. [Create pug files for the frontend in the views directory](#5-create-pug-files-for-the-frontend-in-the-views-directory) <br>
 
-6. [Create Stylesheet and JavaScript files in the public directory.](#6-create-the-stylesheet-and-javaScript-files-in-the-public-directory) <br>
+6. [Create Stylesheet and JavaScript files in the public directory.](#6-create-stylesheet-and-javaScript-files-in-the-public-directory) <br>
 
 7. [Create the route handlers and endpoints to home page](#7-create-the-route-handlers-and-endpoints-for-the-home-page) <br>
 
@@ -343,7 +343,7 @@ const Graduate = require("../models/graduate");
 // Commands <br>
 // touch or code views/errors.pug <br>
 
-✔ See [views/](https://github.com/DariusRain/Grads/blob/master/grads/views")
+✔ See [views/](https://github.com/DariusRain/Grads/blob/master/grads/views)
 
 &nbsp;
 &nbsp;
