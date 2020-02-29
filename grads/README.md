@@ -37,6 +37,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 
 
 # Setting up file structure and installing dependencies
+<hr>
 
 ✔ Initialize a package.json file
 
@@ -93,6 +94,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 
 
 # Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
+<hr>
 
 ✔ Import express from node_modules
 
@@ -202,6 +204,7 @@ app.listen(PORT, () => {
 <hr>
 
 # Setup routes and middlewares required for the main server file
+<hr>
 
 ✔ Create a home route
 
@@ -251,6 +254,7 @@ app.use(express.json());
 <hr>
 
 # Create a Mongoose schema for new graduates
+<hr>
 
 ✔ Create graduate.js file in the models directory
 
@@ -322,6 +326,7 @@ const Graduate = require("../models/graduate");
 <hr>
 
 # Create pug files for the frontend in the views directory
+<hr>
 
 ✔ Create a index.pug file
 
@@ -345,6 +350,7 @@ const Graduate = require("../models/graduate");
 <hr>
 
 # Create Stylesheet and JavaScript files in the public directory
+<hr>
 
 ✔ Add a script.js and stylesheet.css file in public directory
 
@@ -359,6 +365,7 @@ const Graduate = require("../models/graduate");
 <hr>
 
 # Create the route handlers and endpoints for the home page
+<hr>
 
 ✔ Open [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
 
@@ -416,6 +423,8 @@ router.get("/all", async (req, res) => {
 
 
 # The process of building the frontend layout
+
+<hr>
 
 // Getting started with the [index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug") file (Home Page) <br>
 
