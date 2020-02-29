@@ -13,84 +13,83 @@ Create various route endpoints to to interact with Express. <br>
 Save users to the Mongoose Database using the npm package mongoose. <br> 
 (no mongoose is not made by MongoDB, but ontop of the MongoDB Drivers). <bre>
 Form sign up features and sending the data to the back end via HTTP Requests -> (GET, POST, PUT, DELETE) <br> 
-&nbsp;
+
 
 #### Sections: 
 [Installation & set up of express mongoose and pug](####setting-up-file-structure-and-installing-dependencies) 
-&nbsp;
+
 
 [Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](####basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables) 
-&nbsp;
+
 
 [Setup routes and middlewares required for the server.js file](####setup-routes-and-middlewares-required-for-the-main-server-file) 
-&nbsp;
+
 
 [Create a Mongoose schema for new graduates](####create-a-mongoose-schema-for-new-graduates) 
-&nbsp;
+
 
 [Create pug files for the frontend in the views directory](####reate-pug-files-for-the-frontend-in-the-views-directory-pug) 
-&nbsp;
+
 
 [Create Stylesheet and JavaScript files in the public directory.](####create-the-stylesheet-and-javaScript-files-in-the-public-directory) 
-&nbsp;
+
 
 [Create the route handlers and endpoints to home_route.js file](####create-the-route-handlers-and-endpoints-to-home-page) 
-&nbsp;
+
 
 [Process of building the front end layout](####the-process-of-building-the-frontend-layout)
-&nbsp;
+
 
 #### Setting up file structure and installing dependencies 
 
 - [x] Initialize a package.json file
     // Command <br>
     // npm init -y <br>
-&nbsp;
 
 - [x] Install Express
     // Command <br>
     // npm i express <br>
-&nbsp;
+
 
 - [x] Install  Mongoose 
     // Command <br>
     // npm i mongoose <br>
-&nbsp;
+
 
 - [x] Install pug
     // Command <br>
     // npm i pug <br>
-&nbsp;
+
 
 - [x] Create a server.js, app.js or index.js file (Main server file)
     // Commands <br>
     // Visual Studio Code: code server.js <br>
     // touch server.js -> Then open in editor <br>
-&nbsp;
+
 
 - [x] Create a public directory (Static files)
     //Command <br>
     // mkdir public <br>
-&nbsp;
+
 
 - [x] Create a views directory (for pug files)
     // Command <br>
     // mkdir views <br>
-&nbsp;
+
 
 - [x] Create a routes directory
     // Command <br>
     // mkdir routes <br>
-&nbsp;
+
 
 - [x] Create a models directory (mkdir models).
     // Commmand <br>
     // mkdir models <br>
-&nbsp;
+
 
 - [x] Open server.js <br>
-&nbsp;
-&nbsp;
+
+
 
 
 #### Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
@@ -101,49 +100,49 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     ```javascript
         const express = require("express");
     ```
-&nbsp;
+
 
 - [x] Import mongoose from node_modules
     // #2 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         const mongoose = require("mongoose");
     ```
-&nbsp;
+
 
 - [x] Create an instance of an express application
     // #3 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         const app = express();
     ```
-&nbsp;
+
 
 - [x] Import the path core module
     // #4 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
             const path = require('path');
     ```
-&nbsp;
+
 
 - [x] Set the view engine for express to pug
     // #5 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         app.set("views", path.join(__dirname, 'views'));
     ```
-&nbsp;
+
 
 - [x] Set the express view-engine to pug
     // #6 in in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         app.set("view engine", "pug");
     ```
-&nbsp;
+
 
 - [x] Use the express.static() for the public directory.
     // #7 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
     ```javascript
         app.use(express.static("public"));
     ```
-&nbsp;
+
 
 - [x] Create a bash script outside of the project, a quick tool to set enviroment variables.
     // Commands  <br>
@@ -160,7 +159,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     // . ../bash/set_enviroment_development.sh  <br>
     // The '.' states the current directory you are in & the path to the bash script you want to execute  <br>
     // Should see message from the script that it is set to a specific enviroment.  <br>
-&nbsp;
+
 
 - [x] Now assign the enviroment variables value using 'process.env' 
     // #8 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
@@ -186,8 +185,8 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
             }
         );
     ```
-&nbsp;
-&nbsp;
+
+
 
 #### Setup routes and middlewares required for the main server file
 
@@ -196,7 +195,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     // Commands  <br>
     // Visual Studio Code: code routes/home_route.js  <br>
     // touch routes/home_route.js  <br>
-&nbsp;
+
 
 - [x] Write to 'home_route.js' and create an instance of an express router to be exported
     // #1 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
@@ -204,14 +203,14 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
         const express = require('express'),
         router = express.Router();
     ```
-&nbsp;
+
 
 - [x] Export that router, then now available for import in any nodejs file.
     // #2 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
     ```javascript
         module.exports = router;
     ```
-&nbsp;
+
 
 - [x] Then import and use that router as middleware in the server.js file
     // #9 & #10 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js") <br>
@@ -222,7 +221,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
         app.use("/api/home", homeRoute);
         app.use("/api/graduates", graduatesRoute);
     ```
-&nbsp;
+
 
 - [x] Use built-in express middleware called express.json() so incoming requests can be parsed.
     // #11 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js") <br>
@@ -230,8 +229,8 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
         app.use(express.json());
     ```
 
-&nbsp;
-&nbsp;
+
+
 
 #### Create a Mongoose schema for new graduates
 
@@ -239,7 +238,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
     // Commands <br>
     // Visusal Studio Code: code models/graduate.js <br>
     // touch models/graduate.js (Then open it) <br>
-&nbsp;
+
 
 - [x] Import mongoose and use mongoose.Schema() syntax to make a schema
     // #1 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js")
@@ -281,43 +280,43 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 
         });
     ```
-&nbsp;
+
 
 - [x] Export the schema with the mognoose.model() syntax
     // #2 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js")
     ```javascript
         module.exports = mongoose.model('Graduate', GraduateSchema);
     ```
-&nbsp;
+
 
 - [x] Import the model in routes/home_route.js
     // #3 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
     ```javascript
         const Graduate = require('../models/graduate');
     ```
-&nbsp;
-&nbsp;
+
+
 
 
 #### Create pug files for the frontend in the views directory
 - [x] Create a index.pug file
     // Commands
     // touch or code views/index.pug
-&nbsp;
+
 
 - [x] Create a graduate.pug file
     // Commands
     // touch or code views/graduate.pug
-&nbsp;
+
     
 - [x] Create a errors.pug file
     // Commads
     // touch or code views/errors.pug
-&nbsp;
+
     
 - [x] See [views/]("https://github.com/DariusRain/Grads/blob/master/grads/views")
-&nbsp;
-&nbsp;
+
+
         
 
 
@@ -328,18 +327,18 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 //Commands
 // touch or code public/script.js
 // touch or code public/stylesheet.css
-&nbsp;
+
 
 - [x] See [public/script.js]("https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css]("https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css")
-&nbsp;
-&nbsp;
+
+
 
 #### Create the route handlers and endpoints for the home page 
-&nbsp;
+
 
 
 - [x] Open [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
-&nbsp;
+
 
 
 - [x] Create a GET route for the root route for the '/api/home' endpoint and have it render index.pug
@@ -349,7 +348,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
             res.status(200).render('index');
         });
     ```
-&nbsp;
+
 
 - [x] Create a POST route to the same endpoint '/api/home' for new graduates.
     // See #5 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
@@ -370,7 +369,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
             }
         });
     ```
-&nbsp;
+
 
 - [x] Create a GET route with an extended endpoint 'api/home/all'.
     // See #6 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js")
@@ -388,10 +387,10 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
             }
         });
     ```
-&nbsp;
-&nbsp;
+
+
     
- #### The process of building the frontend layout
+#### The process of building the frontend layout
 - [ ] 📝 Currently on.
   Getting started with the [index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")file (Home Page)
 
