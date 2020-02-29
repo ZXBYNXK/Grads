@@ -430,6 +430,6 @@ router.get("/all", async (req, res) => {
 
 // See #1 - #4 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
 
-### Import public static files to index.pug: [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
+### Import public static files to index.pug: [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js) & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
 
 // See #5 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
