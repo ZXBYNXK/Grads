@@ -16,31 +16,31 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 # Sections: 
-[Installation & set up of express mongoose and pug](#installation-&-set-up-of-express-mongoose-and-pug) 
+[Installation & set up of express mongoose and pug](#setting-up-file-structure-and-installing-dependencies) 
 &nbsp;
 
-[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#basic-nodejs-setup-for-express-mongoose-pug-&-enviroment-variables) 
+[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables) 
 &nbsp;
 
-[Setup routes and middlewares required for the server.js file](#setup-routes-and-middlewares-required-for-the-server.js-file) 
+[Setup routes and middlewares required for the server.js file](#setup-routes-and-middlewares-required-for-the-main-server-file) 
 &nbsp;
 
-[Create a Mongoose schema for graduates](#create-a-mongoose-schema-for-graduates) 
+[Create a Mongoose schema for new graduates](#create-a-mongoose-schema-for-new-graduates) 
 &nbsp;
 
 [Create pug files for the frontend in the views directory](#create-pug-files-for-the-frontend-in-the-views-directory-pug) 
 &nbsp;
 
-[Create Stylesheet and JavaScript files in the public directory & link it to Pug.](#create-stylesheet-and-javaScript-files-in-the-public-directory) 
+[Create Stylesheet and JavaScript files in the public directory.](#create-the-stylesheet-and-javaScript-files-in-the-public-directory) 
 &nbsp;
 
-[Create the route handlers and endpoints to home_route.js file](#create-the-route-handlers-and-endpoints-to-home-route.js-file) 
+[Create the route handlers and endpoints to home_route.js file](#create-the-route-handlers-and-endpoints-to-home-page) 
 &nbsp;
 
 [Process of building the front end layout](#the-process-of-building-the-frontend-layout)
 &nbsp;
 
-# Installation & set up of express mongoose and pug
+# Setting up file structure and installing dependencies 
 
 - [x] Initialize a package.json file
     // Command <br>
@@ -93,7 +93,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 
 
-# Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables
+# Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
 
 
 - [x] Import express from node_modules
@@ -189,7 +189,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-# Setup routes and middlewares required for the server.js file
+# Setup routes and middlewares required for the main server file
 
 
 - [x] Create a home route
@@ -233,8 +233,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-# Create a Mongoose schema for graduates
-
+# Create a Mongoose schema for new graduates
 
 - [x] Create graduate.js file in the models directory
     // Commands <br>
@@ -335,7 +334,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 &nbsp;
 &nbsp;
 
-# Create the route handlers and endpoints to home_route.js file
+# Create the route handlers and endpoints for the home page 
 &nbsp;
 
 
