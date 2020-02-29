@@ -97,6 +97,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 
 
 #### Import express from node_modules
+
 // #1 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 const express = require("express");
@@ -104,6 +105,7 @@ const express = require("express");
 &nbsp;
 
 #### Import mongoose from node_modules
+
 // #2 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 const mongoose = require("mongoose");
@@ -111,6 +113,7 @@ const mongoose = require("mongoose");
 &nbsp;
 
 #### Create an instance of an express application
+
 // #3 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 const app = express();
@@ -118,6 +121,7 @@ const app = express();
 &nbsp;
 
 #### Import the path core module
+
 // #4 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
     const path = require('path');
@@ -125,6 +129,7 @@ const app = express();
 &nbsp;
 
 #### Set the view engine for express to pug
+
 // #5 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 app.set("views", path.join(__dirname, 'views'));
@@ -132,6 +137,7 @@ app.set("views", path.join(__dirname, 'views'));
 &nbsp;
 
 #### Set the express view-engine to pug
+
 // #6 in in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 app.set("view engine", "pug");
@@ -139,6 +145,7 @@ app.set("view engine", "pug");
 &nbsp;
 
 #### Use the express.static() for the public directory.
+
 // #7 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 app.use(express.static("public"));
@@ -163,6 +170,7 @@ app.use(express.static("public"));
 &nbsp;
 
 #### Now assign the enviroment variables value using 'process.env' 
+
 // #8 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 const PORT = process.env.PORT,
@@ -171,6 +179,7 @@ DB = process.env.DB;
 &nbsp;
 
 #### Now use the above values to connect to cloud or local database & set server to listen on a port.
+
 // #12 - #13 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 mongoose.connect(
@@ -201,6 +210,7 @@ app.listen(
 &nbsp;
 
 #### Write to 'home_route.js' and create an instance of an express router to be exported
+
 // #1 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
 ```javascript
 const express = require('express'),
@@ -209,6 +219,7 @@ router = express.Router();
 &nbsp;
 
 #### Export that router, then now available for import in any nodejs file.
+
 // #2 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
 ```javascript
 module.exports = router;
@@ -216,6 +227,7 @@ module.exports = router;
 &nbsp;
 
 #### Then import and use that router as middleware in the server.js file
+
 // #9 & #10 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js") <br>
 ```javascript
 const homeRoute = require("./routes/home_route"),
@@ -227,6 +239,7 @@ app.use("/api/graduates", graduatesRoute);
 &nbsp;
 
 #### Use built-in express middleware called express.json() so incoming requests can be parsed.
+
 // #11 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js") <br>
 ```javascript
 app.use(express.json());
@@ -244,6 +257,7 @@ app.use(express.json());
 &nbsp;
 
 #### Import mongoose and use mongoose.Schema() syntax to make a schema
+
 // #1 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js") <br>
 ```javascript
 const mongoose = require('mongoose'),
@@ -286,6 +300,7 @@ GraduateSchema = new mongoose.Schema({
 &nbsp;
 
 #### Export the schema with the mognoose.model() syntax
+
 // #2 in [models/graduate.js]("https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js") <br>
 ```javascript
 module.exports = mongoose.model('Graduate', GraduateSchema);
@@ -293,6 +308,7 @@ module.exports = mongoose.model('Graduate', GraduateSchema);
 &nbsp;
 
 #### Import the model in routes/home_route.js
+
 // #3 in [routes/home_route.js]("https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js") <br>
 ```javascript
 const Graduate = require('../models/graduate');
