@@ -15,7 +15,7 @@ Last Updated: 2/28/20
 
 [Create a Mongoose schema for new graduates](#create-a-mongoose-schema-for-new-graduates)
 
-[Create pug files for the frontend in the views directory](#create-pug-files-for-the-frontend-in-the-views-directory-pug)
+[Create pug files for the frontend in the views directory](#create-pug-files-for-the-frontend-in-the-views-directory)
 
 [Create Stylesheet and JavaScript files in the public directory.](#create-the-stylesheet-and-javaScript-files-in-the-public-directory)
 
@@ -23,7 +23,7 @@ Last Updated: 2/28/20
 
 [Process of building the front end layout](#the-process-of-building-the-frontend-layout)
 
-✔ Under the hood:
+# Under the hood:
 
 A Full stack application using Express Mongoose Pug and Nodejs. <br>
 Create various route endpoints to to interact with Express. <br>
@@ -417,13 +417,12 @@ router.get("/all", async (req, res) => {
 
 # The process of building the frontend layout
 
-- [ ] 📝 Currently on.
-      // Getting started with the [index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")file (Home Page) <br>
+// Getting started with the [index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug") file (Home Page) <br>
 
 ✔ Initial set up for any html doc - open index.pug in editor (Pug ~ Landing Page)
 
-    // See #1 - #4 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
+// See #1 - #4 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
 
 ✔ Import public static files to index.pug: [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js") & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
 
-    // See #5 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
+// See #5 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
