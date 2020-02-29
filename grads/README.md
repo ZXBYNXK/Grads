@@ -1,42 +1,46 @@
 # 🎓Grads
 
 <p>
-The Development Process  
+Development Process  
 Last Updated: 2/28/20
 </p>
 
-## The Development process:
+# Development process
 
-### Under the hood: <br>
+## Under the hood: 
 A Full stack application using Express Mongoose Pug and Nodejs. <br>
+Create various route endpoints to to interact with Express. <br>
+Save users to the Mongoose Database using the npm package mongoose. <br> 
+(nom mongoose is not made by MongoDB, but ontop of the MongoDB Drivers). <bre>
+Form sign up features and sending the data to the back end via HTTP Requests -> (GET, POST, PUT, DELETE) <br> 
 &nbsp;
 
-### Sections: <br>
-[Installation & set up of express mongoose and pug](#✔-installation-&-set-up-of-express-mongoose-and-pug) <br>
+## Sections: 
+[Installation & set up of express mongoose and pug](####installation-&-set-up-of-express-mongoose-and-pug) 
 &nbsp;
 
-[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#✔-Basic-Nodejs-setup-for-Express-,--Mongoose-,-Pug-&-Enviroment-Variables) <br>
+[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](####basic-nodejs-setup-for-express-mongoose-pug-&-enviroment-variables) 
 &nbsp;
 
-[Setup routes and middlewares required for the server.js file](#✔-Setup-routes-and-middlewares-required-for-the-server.js-file--Express) <br>
+[Setup routes and middlewares required for the server.js file](####setup-routes-and-middlewares-required-for-the-server.js-file) 
 &nbsp;
 
-[Create a Mongoose schema for graduates](#create-a-mongoose-schema-for-graduates) <br>
+[Create a Mongoose schema for graduates](####create-a-mongoose-schema-for-graduates) 
 &nbsp;
 
-[Create pug files for the frontend in the views directory](#✔-Create-pug-files-for-the-frontend-in-the-views-directory--Pug) <br>
+[Create pug files for the frontend in the views directory](####create-pug-files-for-the-frontend-in-the-views-directory-pug) 
 &nbsp;
 
-[Create Stylesheet and JavaScript files in the public directory & link it to Pug.](#✔-Create-Stylesheet-and-JavaScript-files-in-the-public-directory) <br>
+[Create Stylesheet and JavaScript files in the public directory & link it to Pug.](####create-stylesheet-and-javaScript-files-in-the-public-directory) 
 &nbsp;
 
-[Create the route handlers and endpoints to home_route.js file](#✔-Create-the-route-handlers-and-endpoints-to-home-route.js-file) <br>
+[Create the route handlers and endpoints to home_route.js file](####create-the-route-handlers-and-endpoints-to-home-route.js-file) 
 &nbsp;
 
-[Process of building the front end layout](#📝-The-process-of-building-the-frontend-layout)
+[Process of building the front end layout](####the-process-of-building-the-frontend-layout)
 &nbsp;
 
-# ✔ Installation & set up of express mongoose and pug
+#### Installation & set up of express mongoose and pug
 
 - [x] Initialize a package.json file
     // Command
@@ -89,7 +93,7 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 &nbsp;
 
 
-# ✔ Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables
+#### Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variables
 
 
 - [x] Import express from node_modules
@@ -185,7 +189,7 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 &nbsp;
 &nbsp;
 
-# ✔ Setup routes and middlewares required for the server.js file -Express
+#### Setup routes and middlewares required for the server.js file
 
 
 - [x] Create a home route
@@ -229,7 +233,7 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 &nbsp;
 &nbsp;
 
-# Create a Mongoose schema for graduates
+#### Create a Mongoose schema for graduates
 
 
 - [x] Create graduate.js file in the models directory
@@ -296,7 +300,7 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 &nbsp;
 
 
-# ✔ Create pug files for the frontend in the views directory -Pug
+#### Create pug files for the frontend in the views directory
 - [x] Create a index.pug file
     // Commands
     // touch or code views/index.pug
@@ -318,7 +322,7 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
         
 
 
-# ✔ Create Stylesheet and JavaScript files in the public directory
+#### Create Stylesheet and JavaScript files in the public directory
 
 
 - [x] Add a script.js and stylesheet.css file in public directory
@@ -331,7 +335,7 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 &nbsp;
 &nbsp;
 
-# ✔ Create the route handlers and endpoints to home_route.js file
+#### Create the route handlers and endpoints to home_route.js file
 &nbsp;
 
 
@@ -388,8 +392,8 @@ A Full stack application using Express Mongoose Pug and Nodejs. <br>
 &nbsp;
 &nbsp;
     
- # 📝 The process of building the frontend layout
-
+ #### The process of building the frontend layout
+- [ ] 📝 Currently on.
   Getting started with the [index.pug]("https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug")file (Home Page)
 
   - [x] Initial set up for any html doc - open index.pug in editor (Pug ~ Landing Page)
