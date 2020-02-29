@@ -1,9 +1,9 @@
 # 🎓Grads
 
-<p>
+<pre>
 Development Process  
 Last Updated: 2/28/20
-</p>
+</pre>
 
 # Development process
 
@@ -97,49 +97,49 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 
 
 #### Import express from node_modules
-// #1 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #1 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 const express = require("express");
 ```
 &nbsp;
 
 #### Import mongoose from node_modules
-// #2 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #2 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 const mongoose = require("mongoose");
 ```
 &nbsp;
 
 #### Create an instance of an express application
-// #3 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #3 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 const app = express();
 ```
 &nbsp;
 
 #### Import the path core module
-// #4 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #4 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
     const path = require('path');
 ```
 &nbsp;
 
 #### Set the view engine for express to pug
-// #5 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #5 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 app.set("views", path.join(__dirname, 'views'));
 ```
 &nbsp;
 
 #### Set the express view-engine to pug
-// #6 in in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #6 in in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 app.set("view engine", "pug");
 ```
 &nbsp;
 
 #### Use the express.static() for the public directory.
-// #7 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #7 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 app.use(express.static("public"));
 ```
@@ -163,7 +163,7 @@ app.use(express.static("public"));
 &nbsp;
 
 #### Now assign the enviroment variables value using 'process.env' 
-// #8 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #8 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 const PORT = process.env.PORT,
 DB = process.env.DB;
@@ -171,7 +171,7 @@ DB = process.env.DB;
 &nbsp;
 
 #### Now use the above values to connect to cloud or local database & set server to listen on a port.
-// #12 - #13 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")  <br>
+// #12 - #13 in [server.js]("https://github.com/DariusRain/Grads/blob/master/grads/server.js")
 ```javascript
 mongoose.connect(
     DB,
