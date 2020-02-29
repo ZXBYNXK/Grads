@@ -30,8 +30,11 @@ Create various route endpoints to to interact with Express. <br>
 Save users to the Mongoose Database using the npm package mongoose. <br>
 (no mongoose is not made by MongoDB, but ontop of the MongoDB Drivers). <bre>
 Form sign up features and sending the data to the back end via HTTP Requests -> (GET, POST, PUT, DELETE) <br>
+&nbsp;
+&nbsp;
 
 <hr>
+
 
 # Setting up file structure and installing dependencies
 
@@ -82,8 +85,11 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 // mkdir models <br>
 
 ## Open server.js <br>
+&nbsp;
+&nbsp;
 
 <hr>
+
 
 # Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
 
@@ -187,8 +193,11 @@ mongoose.connect(
 app.listen(PORT, () => {
   console.log(`Listening on ${PORT}... `);
 });
+&nbsp;
+&nbsp;
 ```
 <hr>
+
 
 # Setup routes and middlewares required for the main server file
 
@@ -234,8 +243,11 @@ app.use("/api/graduates", graduatesRoute);
 ```javascript
 app.use(express.json());
 ```
+&nbsp;
+&nbsp;
 
 <hr>
+
 
 # Create a Mongoose schema for new graduates
 
@@ -302,8 +314,11 @@ module.exports = mongoose.model("Graduate", GraduateSchema);
 ```javascript
 const Graduate = require("../models/graduate");
 ```
+&nbsp;
+&nbsp;
 
 <hr>
+
 
 # Create pug files for the frontend in the views directory
 
@@ -385,8 +400,11 @@ router.get("/all", async (req, res) => {
   }
 });
 ```
+&nbsp;
+&nbsp;
 
 <hr>
+
 
 # The process of building the frontend layout
 
