@@ -7,21 +7,21 @@ Last Updated: 2/28/20
 
 # Sections:
 
-[Installation & set up of express mongoose and pug](#setting-up-file-structure-and-installing-dependencies)
+1 [Installation & set up of express mongoose and pug](#1-setup-project-structure-and-installing-dependencies) <br>
 
-[Basic Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#basic-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables)
+2 [Nodejs setup for Express, Mongoose, Pug & Enviroment Variable](#2-nodejs-setup-for-express-mongoose-pug-and-enviroment-variables) <br>
 
-[Setup routes and middlewares required for the server.js file](#setup-routes-and-middlewares-required-for-the-main-server-file)
+3 [Setup routes and middlewares required for the main server file](#3-setup-routes-and-middlewares-required-for-the-main-server-file) <br>
 
-[Create a Mongoose schema for new graduates](#create-a-mongoose-schema-for-new-graduates)
+4 [Create a Mongoose schema for new graduates](#4-create-a-mongoose-schema-for-new-graduates) <br>
 
-[Create pug files for the frontend in the views directory](#create-pug-files-for-the-frontend-in-the-views-directory)
+5 [Create pug files for the frontend in the views directory](#5-create-pug-files-for-the-frontend-in-the-views-directory) <br>
 
-[Create Stylesheet and JavaScript files in the public directory.](#create-the-stylesheet-and-javaScript-files-in-the-public-directory)
+6 [Create Stylesheet and JavaScript files in the public directory.](#6-create-the-stylesheet-and-javaScript-files-in-the-public-directory) <br>
 
-[Create the route handlers and endpoints to home_route.js file](#create-the-route-handlers-and-endpoints-to-home-page)
+7 [Create the route handlers and endpoints to home page](#7-create-the-route-handlers-and-endpoints-for-the-home-page) <br>
 
-[Process of building the front end layout](#the-process-of-building-the-frontend-layout)
+8 [Building the front end layout](#8-building-the-frontend-layout) <br>
 
 # Under the hood:
 
@@ -36,7 +36,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 <hr>
 
 
-# Setting up file structure and installing dependencies
+# 1 Setup project structure and installing dependencies:
 <hr>
 
 ✔ Initialize a package.json file
@@ -93,7 +93,7 @@ Form sign up features and sending the data to the back end via HTTP Requests -> 
 <hr>
 
 
-# Basic Nodejs setup for Express Mongoose Pug and Enviroment Variables
+# 2 Nodejs setup for Express Mongoose Pug and Enviroment Variables:
 <hr>
 
 ✔ Import express from node_modules
@@ -203,7 +203,7 @@ app.listen(PORT, () => {
 
 <hr>
 
-# Setup routes and middlewares required for the main server file
+# 3 Setup routes and middlewares required for the main server file:
 <hr>
 
 ✔ Create a home route
@@ -253,7 +253,7 @@ app.use(express.json());
 
 <hr>
 
-# Create a Mongoose schema for new graduates
+# 4 Create a Mongoose schema for new graduates:
 <hr>
 
 ✔ Create graduate.js file in the models directory
@@ -325,7 +325,7 @@ const Graduate = require("../models/graduate");
 
 <hr>
 
-# Create pug files for the frontend in the views directory
+# 5 Create pug files for the frontend in the views directory:
 <hr>
 
 ✔ Create a index.pug file
@@ -349,7 +349,7 @@ const Graduate = require("../models/graduate");
 &nbsp;
 <hr>
 
-# Create Stylesheet and JavaScript files in the public directory
+# 6 Create Stylesheet and JavaScript files in the public directory:
 <hr>
 
 ✔ Add a script.js and stylesheet.css file in public directory
@@ -364,7 +364,7 @@ const Graduate = require("../models/graduate");
 &nbsp;
 <hr>
 
-# Create the route handlers and endpoints for the home page
+# 7 Create the route handlers and endpoints for the home page:
 <hr>
 
 ✔ Open [routes/home_route.js](https://github.com/DariusRain/Grads/blob/master/grads/routes/home_route.js) <br>
@@ -422,7 +422,7 @@ router.get("/all", async (req, res) => {
 <hr>
 
 
-# The process of building the frontend layout
+# 8 Building the frontend layout:
 
 <hr>
 
