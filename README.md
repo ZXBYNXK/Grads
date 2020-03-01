@@ -13,7 +13,7 @@ Last Updated: 2/28/20
 <pre>
         This application will be used to display job title & education information to companies 
     who may be searching to fill a certain role.  So A company can just simply search and find who 
-    they are looking for similar to a Google search rather than having a social media aspect compared to Linkedin. 
+    they are looking for similar to a Google search rather than having a social media aspect. 
 </pre>
 &nbsp;
 
