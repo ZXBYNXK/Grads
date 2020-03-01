@@ -5,6 +5,10 @@ Last Updated: 2/28/20
 </p>
 &nbsp;
 
+### [_See The Development Process?_](https://github.com/DariusRain/Grads/tree/master/grads)
+
+&nbsp;
+
 ### About Project:
 <pre>
         This application will be used to display job title & education information to companies 
@@ -23,4 +27,4 @@ Last Updated: 2/28/20
 </pre>
 &nbsp;
 
-### [_The Development Process_]("https://github.com/DariusRain/Grads/tree/master/grads")
+
