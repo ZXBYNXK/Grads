@@ -14,7 +14,7 @@ Last Updated: 2/28/20
 &nbsp;
 
 ### The Latest:
-<img src="https://res.cloudinary.com/cloud-99/image/upload/v1583095823/grads_a3t8tz.gif">
+<img src="https://res.cloudinary.com/cloud-99/image/upload/v1583095823/grads_a3t8tz.gif" width="100%">
 <pre>
     v1.0.0 -> Completed intitial setup and theme of application
     v1.0.1 -> (New) Graduate Avatars, Form sign up, Search bar.
