@@ -1,3 +1,6 @@
+
+
+/* #1 All PUG FILE SECTION */
 * {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -31,20 +34,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-.profile_div {
-  border-radius: 12px;
-  background-color: whitesmoke;
-  color: black;
-  margin: 12px;
-}
-
 .heading_text {
   font-size: 50px;
   padding: none;
@@ -63,6 +52,51 @@ footer {
   flex-direction: column;
 
 }
+
+
+.header_buttons {
+  box-shadow: 3px 3px 10px black;
+  margin: 10px;
+  background-color:black;
+  color: white;
+  border-radius: 12px;
+  font-size: 20px;
+  opacity: 0.8;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: orange;
+}
+.header_buttons:hover {
+  border-color: black;
+  box-shadow: none;
+}
+
+#headline {
+  border-radius: 12px;
+  padding: 20px;
+  border-style: solid;
+  box-shadow: 3px 3px 10px black;
+  border-color: orange;
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: 25px;
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* #2 Index.pug Section*/
+
+
 
 .hover_me {
   padding: 10px;
@@ -83,32 +117,6 @@ footer {
   border-color: black;
   opacity: none;
 }
-.header_buttons {
-  box-shadow: 3px 3px 10px black;
-  margin: 10px;
-  background-color:black;
-  color: white;
-  border-radius: 12px;
-  font-size: 20px;
-  opacity: 0.8;
-  margin-top: 10px;
-  border-style: solid;
-  border-color: orange;
-}
-.header_buttons:hover {
-  border-color: black;
-  box-shadow: none;
-}
-
-
-
-
-
-
-
-
-
-
 
 #header {
   background-color: black !important;
@@ -120,28 +128,6 @@ footer {
   
 }
 
-#graduate_profile img {
-
-  width: 80px;
-  background-color: whitesmoke;
-  border-radius: 12px;
-}
-
-#graduate_profile {
-  padding: 20px;
-  width: 50%;
-  text-align: center;
-  border-style: solid;
-  box-shadow: 3px 3px 10px black;
-  border-color: orange;
-  background-color: black;
-  opacity: 0.8;
-  border-radius: 12px;
-  color: white;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom:  20px;
-}
 #home {
   box-shadow: 3px 3px 10px black;
   margin: 10px;
@@ -165,22 +151,6 @@ footer {
 }
 
 
-
-#headline {
-  border-radius: 12px;
-  padding: 20px;
-  border-style: solid;
-  box-shadow: 3px 3px 10px black;
-  border-color: orange;
-  background-color: black;
-  opacity: 0.8;
-  color: white;
-  font-size: 25px;
-  width: 88%;
-  margin: 0 auto;
-  text-align: center;
-  display: none;
-}
 
 
 #search_input {
@@ -267,3 +237,75 @@ footer {
 
 
 /* * { border: 1px solid red; } */
+
+
+
+/* #3 Graduate.pug Section */
+
+
+#graduate_profile img {
+  margin-bottom: 30px;
+  margin-right: 0px;
+  width: 120px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+}
+
+
+#graduate_profile {
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  border-style: solid;
+  box-shadow: 3px 3px 10px black;
+  border-color: orange;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 12px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom:  20px;
+}
+.profile_heading {
+  background-color:whitesmoke;
+  font-weight: bolder;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 0 auto;
+  border: orange solid 5px;
+   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+.profile_heading_special {
+  background-color: whitesmoke;
+  font-weight: bolder;
+  color: black;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-size: 40px;
+}
+.profile_text {
+  text-align: center;
+  font-size: 18px;
+}
+.profile_div {
+  overflow-wrap: break-word;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  color: black;
+  margin: 20px;
+  padding: 30px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+
+}

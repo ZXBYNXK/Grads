@@ -18,19 +18,23 @@
             email: {
                 type: String,
                 required: true,
+                default: 'N/A',
                 unique: true
             },
             about: {
                 type: String,
                 default: 'N/A',
+                maxlength: 600
             },
             education: {
                 type: String,
                 default: 'N/A',
+                maxlength: 200
             },
             jobtitle: {
                 type: String,
-                default: 'N/A'
+                default: 'N/A',
+                maxlength: 100
             }
             
         });

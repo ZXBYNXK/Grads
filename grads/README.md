@@ -433,3 +433,6 @@ router.get("/all", async (req, res) => {
 ### Import public static files to index.pug: [public/script.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js) & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public/styles.css) <br>
 
 // See #5 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
+
+// The rest is poretty straight foward not going to teach a lesson on HTML.
+

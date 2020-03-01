@@ -1,3 +1,9 @@
+
+// #1 Create an object to organize future development
+// it will divdided into sections, one contians the elements for
+// the page 'index.elements', one for the methods 'index.methods'.
+// index.methods.http.zFetch(method, url, json)
+//    this method
 const index = {
   elements: {
     signupButton: document.getElementById("signup_button"),
@@ -71,6 +77,8 @@ const index = {
         }
       }
     },
+
+
     http: {
       zFetch: async (method, url, json) => {
         return await (() => {
@@ -133,11 +141,16 @@ const {
 // Destyructuring methods object from the result of index
 const { show, search, http } = methods;
 
+
+// Event Listeners
 signupButton.addEventListener("click", show.graduateForm);
 jobTitle.addEventListener("keypress", show.imageInput);
-imageInput.addEventListener("click", show.AboutInput);
+jobTitle.addEventListener("click", show.imageInput);
+imageInput.addEventListener("click", show.aboutInput);
 imageInput.addEventListener("keypress", show.aboutInput);
 aboutInput.addEventListener("keypress", show.educationInput);
+aboutInput.addEventListener("click", show.educationInput);
+
 searchButton.addEventListener("click", show.search);
 searchInput.addEventListener("keypress", search.grads);
 headlineButton.addEventListener("click", show.headline);
@@ -171,45 +184,53 @@ const getGraduates = (async () => {
       parent = document.getElementById("show_graduates");
       grads.reverse().forEach(graduate => {
         let div = document.createElement("div"),
-          img = document.createElement("img"),
+          avatar = document.createElement("img"),
           breakSt = document.createElement("hr"),
-          a = document.createElement("a"),
-          p = document.createElement("h4"),
-          p2 = document.createElement("h4"),
-          p3 = document.createElement("h4");
+          profileLink = document.createElement("a"),
+          graduateName = document.createElement("h4"),
+          jobtitleHeading = document.createElement("h4"),
+          jobtitle = document.createElement("h4");
+
         div.setAttribute("class", "hover_me");
         div.style =
           "margin: 0 auto; margin-top: 20px; margin-bottom: 20px; width: 15%;";
-        img.setAttribute("src", graduate.avatar);
-        img.style =
+
+        avatar.setAttribute("src", graduate.avatar);
+
+        avatar.setAttribute("onerror", "this.src='https://bit.ly/2wzdL2x'");
+        avatar.style =
           "border-radius: 12px; width: 88%; background-color: white; margin: 0 auto;";
-        p.innerText = `${graduate.firstname} ${graduate.lastname}`;
-        p2.innerText = `Job Title:`;
-        a.style = "text-decoration: none;";
-        a.setAttribute(
+
+        graduateName.innerText = `${graduate.firstname} ${graduate.lastname}`;
+
+        jobtitleHeading.innerText = `Job Title:`;
+
+        profileLink.style = "text-decoration: none;";
+        profileLink.setAttribute(
           "href",
           `http://localhost:3000/api/graduates/${graduate._id}`
         );
+
+
         if (graduate.jobtitle === "") {
-          p3.innerText = "N/A";
+          jobtitle.innerText = "N/A";
         } else {
-          p3.innerText = graduate.jobtitle;
+          jobtitle.innerText = graduate.jobtitle;
         }
 
-        a.appendChild(img);
-        div.appendChild(a);
-        div.appendChild(p);
+
+        profileLink.appendChild(avatar);
+        div.appendChild(profileLink);
+        div.appendChild(graduateName);
         div.appendChild(breakSt);
-        div.appendChild(p2);
-        div.appendChild(p3);
-        div.className = `hover_me`;
+        div.appendChild(jobtitleHeading);
+        div.appendChild(jobtitle);
         parent.appendChild(div);
       });
     })
     .catch(err => {
       return err;
     });
-  console.log(getGraduates);
   return graduates;
 })();
 
@@ -223,30 +244,8 @@ function sendForm(ev) {
   let data = {};
 
   for (let objects of formData) {
-    const [key, value] = objects;
-    value = value.trim()
-    switch (key) {
-      case "firstname": 
-      case "lastname":
-      case 'jobtitle':
-        if(value.length > 1) {
-        data[key] = value;
-        } else {
-          data[key] = 'N/A'
-        }
-        break;
-      case "email":
-      case "about":
-      case "education":
-      case "avatar":
-        if(value.length > 5) {
-          data[key] = value;
-          } else {
-            data[key] = 'N/A'
-          }        
-        break;
-      default:
-        console.log('Something didnt pass, un authorized keys.')
+    if (objects[1]) {
+      data[objects[0]] = objects[1].trim();
     }
   }
   http.zFetch("PoST", "/api/home", data);

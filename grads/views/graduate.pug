@@ -4,6 +4,7 @@ html
         title Graduates
         link(rel="stylesheet" type="text/css" href="../../styles.css")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        script(src='../../user.js' defer)
     body
         header(class="container_row_1" id="header") 
             span(id="heading_text") 🎓 #{graduate.name}
@@ -11,40 +12,33 @@ html
             button( id="home_button" class="header_buttons" ) Home
             button( id="edit" class="header_buttons") Edit
         div(id="graduate_profile" class="container_column_1")
-            div
-                img(src=graduate.avatar, style="border-radius: 12px; width:100px;")
+            div(id="avatar_div")
+                img( id="avatar" src=graduate.avatar, onerror="this.src='https://bit.ly/2wzdL2x'")
+                br
+                span(class="profile_heading_special") #{graduate.name}
                 br
                 br
-
             div(id="jobtitle_div", class="profile_div")
-                h1 Job Title:
-                span #{graduate.jobtitle}
-                br
-                br
-                br                
+                span(class="profile_heading") Job Title
+                
+                span(class="profile_text") #{graduate.jobtitle}
+         
         
             div(id="education_div", class="profile_div")
-                h1 Education:
-                span #{graduate.education}
-                br
-                br
-                br
+                span(class="profile_heading") Education
+                span(class="profile_text") #{graduate.education}
+
 
             div(id ="about_div" class="profile_div") 
-                h1 About:
-                span #{graduate.about}
-                br
-                br
-                br
+                span(class="profile_heading") About
+                span(class="profile_text") #{graduate.about}
+
                 
-            div(id="contact" class="profile_div")
-                h1 Contact:
-                span #{graduate.email}
-        script. 
-            document.getElementById("home_button").addEventListener("click", goHome)
-            function goHome() {
-              window.location.assign("http://localhost:3000/api/home")
-            }
+            div(id="contact_div" class="profile_div")
+                span(class="profile_heading") Contact
+                span(class="profile_text") #{graduate.email}
+
+
 
 
     footer(id="footer2")  

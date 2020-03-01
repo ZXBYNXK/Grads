@@ -45,7 +45,7 @@ html
         //- #5 
         //- Linking the javascript and stylesheet from the public static folder
         link(rel="stylesheet", type="text/css", href="../styles.css")
-        script(src="../index.js" defer)
+        script(src="../../index.js" defer)
         
     //- #4 
     //- (Initial setup of any html document)
@@ -93,14 +93,14 @@ html
             h1(style="maegin-left: 1px;") 🎓 New Graduate ?
             
             label(for="firstname") Firstname            
-            input(name="firstname" type="text" placeholder="John")
+            input(name="firstname" type="text" placeholder="John" required)
             
             label(for="lastname") Lastname            
-            input(name="lastname" type="text" placeholder="Doe")            
+            input(name="lastname" type="text" placeholder="Doe" required)            
             
 
             label(for="email") Email
-            input(name="email" placeholder="name@email.com")            
+            input(name="email" type="email" placeholder="name@email.com" required)            
             
 
             label(for="jobtitle") JobTitle            
