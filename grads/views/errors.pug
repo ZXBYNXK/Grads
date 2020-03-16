@@ -1,4 +1,14 @@
-extends index.pug
-    
-    block content
-        div #{error}
+doctype html
+html     
+    head 
+        title Graduates
+        link(rel="stylesheet" type="text/css" href="../../styles.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        script(src='../../user.js' defer)
+    body
+        header(class="container_row_1" id="header") 
+            span(id="heading_text") 🎓 Grads
+        div(class="container_row_1")
+            button( id="home_button" class="header_buttons" ) Home        
+        div 
+            h1(align="center", style="color: red;") #{error.message}

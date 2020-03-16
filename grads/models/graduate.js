@@ -35,6 +35,9 @@
                 type: String,
                 default: 'N/A',
                 maxlength: 100
+            },
+            contact: {
+                type: String,
             }
             
         });

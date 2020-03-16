@@ -75,7 +75,9 @@ app.get("/", (req, res) => {
 // It is more recomended to do it this way for obvious reasons. (Clean code) 
 app.use("/api/home", homeRoute);
 app.use("/api/graduates", graduatesRoute);
-
+app.use( (req, res) => {
+    res.redirect("/api/home")
+})
 // # 12 
 // Mongoose connection
 // This is required in order to connect and access mongoose databse.

@@ -1,9 +1,20 @@
 
 
-/* #1 All PUG FILE SECTION */
+/*
+------------------------------------------------------------------------------------
+ #1 Styles for all .pug files 
+------------------------------------------------------------------------------------ 
+*/
+
+/*
+   #2 Modify the styles that will be used on every page.
+  The * means all, so I am setting the font family for all.
+*/
 * {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
 body {
   margin: 0;
 }
@@ -94,7 +105,11 @@ footer {
 
 
 
-/* #2 Index.pug Section*/
+/*
+-----------------------------------------------------------
+  #2 Styles for index.pug only
+------------------------------------------------------------
+*/
 
 
 

@@ -34,8 +34,10 @@ router.get("/all", async (req, res) => {
     res.status(200).json(allGraduates);
   } catch (err) {
     res.status(500).render("errors", {
-      error: "500 Server error."
-    });
+      error: {
+        message: "500 Server error."
+      }
+      });
   }
 });
 
@@ -82,6 +84,8 @@ router.post("/", async (req, res) => {
     });
   }
 });
-
+router.use( (req, res) => {
+  res.redirect("/api/home")
+})
 //#2 Export the router to server.js
 module.exports = router;
