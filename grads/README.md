@@ -2,7 +2,7 @@
 
 <pre>
 Development Process  
-Last Updated: 2/28/20
+Last Updated: 3/16/20
 </pre>
 
 ## Sections:
@@ -21,7 +21,7 @@ Last Updated: 2/28/20
 
 7. [Create the route handlers and endpoints to home page](#7-create-the-route-handlers-and-endpoints-for-the-home-page) <br>
 
-8. [Building the front end layout](#8-building-the-frontend-layout) <br>
+8. [Building the front end](#8-building-the-frontend) <br>
 
 ## Under the hood:
 
@@ -267,41 +267,43 @@ app.use(express.json());
 // #1 in [models/graduate.js](https://github.com/DariusRain/Grads/blob/master/grads/models/graduate.js) <br>
 
 ```javascript
-const mongoose = require("mongoose"),
-  GraduateSchema = new mongoose.Schema({
-    avatar: {
-      type: String,
-      default: "https://bit.ly/2wzdL2x"
-    },
-    firstname: {
-      type: String,
-      required: true
-    },
-    lastname: {
-      type: String,
-      required: true
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true
-    },
-    about: {
-      type: String,
-      default: "N/A",
-      min: 10
-    },
-    education: {
-      type: String,
-      default: "N/A",
-      min: 5
-    },
-    jobtitle: {
-      type: String,
-      min: 1,
-      default: "N/A"
-    }
-  });
+const mongoose = require('mongoose'),
+    GraduateSchema = new mongoose.Schema({
+        avatar: {
+            type: String,
+            default: 'https://bit.ly/2wzdL2x'
+        },
+        firstname: {
+            type: String,
+            required: true
+        },
+        lastname: {
+            type: String,
+            required: true
+        },
+        email: {
+            type: String,
+            required: true,
+            default: 'N/A',
+            unique: true
+        },
+        about: {
+            type: String,
+            default: 'N/A',
+            maxlength: 600
+        },
+        education: {
+            type: String,
+            default: 'N/A',
+            maxlength: 200
+        },
+        jobtitle: {
+            type: String,
+            default: 'N/A',
+            maxlength: 100
+        }
+        
+    });
 ```
 
 ### Export the schema with the mognoose.model() syntax
@@ -422,7 +424,7 @@ router.get("/all", async (req, res) => {
 <hr>
 
 
-## 8. Building the frontend layout
+## 8. Building the frontend
 
 <hr>
 
@@ -434,5 +436,18 @@ router.get("/all", async (req, res) => {
 
 // See #5 in [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) <br>
 
-// The rest is poretty straight foward not going to teach a lesson on HTML.
+// Read comments [views/index.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/index.pug) & [public/stylesheet.css](https://github.com/DariusRain/Grads/blob/master/grads/public)
 
+### Creating the index.js file for the front end 
+// This file will handle all the events in the web application on the home page <br>
+// Read comments in [public/index.js](https://github.com/DariusRain/Grads/blob/master/grads/public/index.js) <br>
+
+### Creating the views/graduate.pug and public/user.js files
+// Same as above just different layout and events. <br>
+// See comments in [views/graduate.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/graduate.pug) & [public/user.js](https://github.com/DariusRain/Grads/blob/master/grads/public/user.js)
+
+### Creating the views/errors.pug file
+// This page will be displayed if any errors occur in the route handlers
+// See [views/errors.pug](https://github.com/DariusRain/Grads/blob/master/grads/views/errors.pug)
+
+### This is the end of the description of the development process, open for any questions about this.

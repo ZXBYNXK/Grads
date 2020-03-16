@@ -124,6 +124,7 @@ const index = {
   }
 };
 
+
 // Destructuring index object
 const { elements, methods } = index;
 

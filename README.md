@@ -23,7 +23,8 @@ Last Updated: 2/28/20
     v1.0.0 -> Completed intitial setup and theme of application
     v1.0.1 -> (New) Graduate Avatars, Form sign up, Search bar.
     v1.0.2 -> (New) Clickable Avatars to redirect to a Graduate's profile.
-    v1.0.3 -> Updated more documentation & review then comment on code. 
+    v1.0.3 -> Updated more documentation & review then comment on code.
+    v1.0.4 -> Endpoint Validation, Edit profile feature. 
 </pre>
 &nbsp;
 

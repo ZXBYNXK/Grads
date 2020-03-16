@@ -10,7 +10,8 @@ html
             span(id="heading_text") 🎓 #{graduate.name}
         div(class="container_row_1")
             button( id="home_button" class="header_buttons" ) Home
-            button( id="edit" class="header_buttons") Edit
+            button( id="edit_button" class="header_buttons") Edit
+            button( id="delete_button" class="header_buttons" style="background-color: red; color: white; display: none;") Delete
         div(id="graduate_profile" class="container_column_1")
             div(id="avatar_div")
                 img( id="avatar" src=graduate.avatar, onerror="this.src='https://bit.ly/2wzdL2x'")
@@ -37,7 +38,9 @@ html
             div(id="contact_div" class="profile_div")
                 span(class="profile_heading") Contact
                 span(class="profile_text") #{graduate.email}
-
+                - if(graduate.contact) 
+                span(class="profile_text") #{graduate.contact}
+                
 
 
 
